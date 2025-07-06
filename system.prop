@@ -1,0 +1,6 @@
+ro.camera.req.fmq.size=0
+ro.camera.res.fmq.size=0
+vendor.arcsoft.turbo_re_lowdeblur=95
+vendor.arcsoft.turbo_re_fulldeblur=95
+vendor.arcsoft.turbo_re_sharpness=0
+vendor.arcsoft.turbo_re_full_sharpness=0

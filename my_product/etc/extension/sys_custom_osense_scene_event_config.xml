@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config name="scene_event">
+    <filter-conf>
+        <version>2024110410</version>
+        <filter-name>sys_custom_osense_scene_event_config</filter-name>
+    </filter-conf>
+	<!-- 相机HAL启动场景 -->
+    <event id="6000" name="HAL_CAMERA_OPEN" maxWorkDurationMs="-1" source_caller="cameraserver_vnd">
+        <key-thread name="CamxThreadCore" owner="cameraserver_vnd" sched_policy="ux" priority="MEDIUM_HEAVY" />
+    </event>
+
+    <!-- 相机FW启动场景 -->
+    <event id="6003" name="FW_CAMERA_OPEN" maxWorkDurationMs="-1" source_caller="cameraserver_sys">
+        <key-thread name="cameraservice" owner="cameraserver_sys" sched_policy="ux" priority="MEDIUM_HEAVY" />
+    </event>
+
+    <!-- 相机HAL启动场景 -->
+    <event id="6004" name="HAL_CAMERA_OPEN" maxWorkDurationMs="-1" source_caller="cameraserver_vnd">
+        <key-thread name="CameraOpenConfigThread" owner="cameraserver_vnd" sched_policy="ux" priority="MEDIUM_HEAVY" />
+    </event>
+
+    <!-- 相机HAL启动场景 -->
+    <event id="6005" name="HAL_CAMERA_OPEN" maxWorkDurationMs="-1" source_caller="cameraserver_vnd">
+        <key-thread name="ChiThreadManage" owner="cameraserver_vnd" sched_policy="ux" priority="MEDIUM_HEAVY" />
+    </event>
+
+    <!-- 相机HAL启动场景 -->
+    <event id="6006" name="HAL_CAMERA_OPEN" maxWorkDurationMs="-1" source_caller="cameraserver_vnd">
+        <key-thread name="CamxPipelineThread" owner="cameraserver_vnd" sched_policy="ux" priority="MEDIUM_HEAVY" />
+    </event>
+
+    <!-- 相机HAL启动场景 -->
+    <event id="6007" name="HAL_CAMERA_OPEN" maxWorkDurationMs="-1" source_caller="cameraserver_vnd">
+        <key-thread name="SubmitRequestHandler" owner="cameraserver_vnd" sched_policy="ux" priority="MEDIUM_HEAVY" />
+    </event>
+
+    <!-- 相机HAL启动场景 -->
+    <event id="6008" name="HAL_CAMERA_OPEN" maxWorkDurationMs="-1" source_caller="cameraserver_vnd">
+        <key-thread name="OnStreamBufferWorkingThread" owner="cameraserver_vnd" sched_policy="ux" priority="MEDIUM_HEAVY" />
+    </event>
+
+    <!-- 相机HAL启动场景 -->
+    <event id="6009" name="HAL_CAMERA_SHAPSHOT" maxWorkDurationMs="-1" source_caller="cameraserver_vnd">
+        <key-thread name="OfflineCHIThreadManager" owner="cameraserver_vnd" sched_policy="ux" priority="MEDIUM_HEAVY" />
+    </event>
+
+    <!-- 相机 SAT 算法 -->
+    <event id="6020" name="HAL_CAMERA_SAT" maxWorkDurationMs="-1" source_caller="cameraserver_vnd">
+        <key-thread name="mvgsat_sub_fp" owner="cameraserver_vnd" sched_policy="ux" priority="MEDIUM_HEAVY" />
+    </event>
+</config>

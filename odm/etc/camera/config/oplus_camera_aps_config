@@ -1,0 +1,2075 @@
+{
+  "file_version": 15.015,
+  "file_data": [
+
+{
+  "VendorTag": "com.oplus.sat.use.ahead.zoomratio",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.support.re.zoom.crop",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.sat.ultrawide.zoom.range",
+  "Type": "Float",
+  "Count": "2",
+  "Value": "0.6,1.0"
+},
+
+{
+  "VendorTag": "com.oplus.sat.main.zoom.range",
+  "Type": "Float",
+  "Count": "2",
+  "Value": "1.0,3.0"
+},
+
+{
+  "VendorTag": "com.oplus.rtb.msg.luxindex.trigger.enable",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.sat.tele.zoom.range",
+  "Type": "Float",
+  "Count": "2",
+  "Value": "3.0,120.0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.decision.override",
+  "Type": "String",
+  "Count": "18",
+  "Value": "23821, 23821, 23821, 23821, 23821, 23821, 23821, 23821, 23821, 23821, 23821, 23821, 23821, 23821, 23821, 23821, 23821, 23821"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.bokeh",
+  "Type": "Int32",
+  "Count": "270",
+  "Value": "  270,      2,    1,             0,            0,                     8,                  800,             4096,3072,4096,3072,4096,3072,4096,3072,1,0,        3136,2352,3136,2352,3136,2352,3136,2352,1,0,
+              0,        2,    1,             0,            0,                     8,                  800,             4096,3072,4096,3072,4096,3072,4096,3072,1,0,        1440,1080,1440,1080,1440,1080,1440,1080,1,0,
+              180,      2,    1,             1,            0,                     8,                  800,             4096,3072,4096,3072,4096,3072,4096,3072,1,0,        4096,3072,1920,1440,4096,3072,4096,3072,1,0,
+              270,      2,    1,             0,            0,                     8,                  800,             4096,3072,2048,1536,4096,3072,4096,3072,1,0,        3136,2352,1664,1248,3136,2352,3136,2352,1,0,
+              270,      2,    1,             0,            0,                     8,                  800,             4096,3072,2048,1536,4096,3072,4096,3072,1,0,        3136,2352,1664,1248,3136,2352,3136,2352,1,0,
+              270,      2,    1,             0,            0,                     8,                  800,             4096,3072,2048,1536,4096,3072,4096,3072,1,0,        3136,2352,1664,1248,3136,2352,3136,2352,1,0,
+              270,      2,    1,             0,            0,                     8,                  800,             4096,3072,2767,2075,4096,3072,4096,3072,1,0,        3136,2352,2118,1589,3136,2352,3136,2352,1,0,
+              180,      2,    1,             1,            0,                     8,                  800,             4096,3072,3520,2640,4096,3072,4096,3072,1,0,        1920,1440,1650,1237,1920,1440,1920,1440,1,0,
+              270,      2,    1,             0,            0,                     8,                  800,             4096,3072,2048,1536,4096,3072,4096,3072,1,0,        4096,3072,1664,1248,3136,2352,3136,2352,1,0,
+              270,      2,    1,             0,            0,                     8,                  800,             4096,3072,1920,1440,1920,1440,1920,1440,1,0,        3136,2352,1664,1248,1664,1248,1664,1248,1,0",
+  "Comment": "rotation, mode, dualCalitype,  isTeleMaster, isAppSetBlurintensity, foregroundBlurScale,runTimeMemSize,  masterImageInfo /*struct cameraImageSize_t*/,       slaveImageInfo /*struct cameraImageSize_t*/"
+},
+
+{
+  "VendorTag": "com.oplus.aps.spotlight.enable",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1",
+  "Comment": "enable spotlight fusion image used for bokeh"
+},
+
+{
+  "VendorTag": "com.oplus.aps.bokeh.set.extra.effects",
+  "Type": "Int32",
+  "Count": "21",
+  "Value": "0,1,0,
+            1,1,0,
+            0,1,0,
+            0,1,0,
+            0,1,0,
+            0,1,0,
+            1,1,0",
+  "Comment": "Bokeh effect support: Bigface; Pet; Multisemseg"
+},
+
+{
+  "VendorTag": "com.oplus.b2y.direct",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1",
+  "Comment": "use physicalMeta to B2Y only on rear portrait mode, default:1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.thr.bokehhdr",
+  "Type": "Int32",
+  "Count": "3",
+  "Value": "25, 0, 0"
+},
+
+{
+  "VendorTag": "com.oplus.rtb.facesize.distance.threshold",
+  "Type": "Int32",
+  "Count": "8",
+  "Value": " 43/*focusDistanceThresholdFallingFace*/, 47/*focusDistanceThresholdRisingFace*/,
+             47/*focusDistanceThresholdFallingFace*/, 52/*focusDistanceThresholdRisingFace*/,
+             47/*focusDistanceThresholdFallingFace*/, 52/*focusDistanceThresholdRisingFace*/,
+             54/*focusDistanceThresholdFallingFace*/, 58/*focusDistanceThresholdRisingFace*/",
+  "Comment": "facesize focus distance threshold: include rear, rear2xIzoom, rear2x, rear6x"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.rtb",
+  "Type": "Int32",
+  "Count": "326",
+  "Value": "  270 /*1x rotation*/, 1 /*focusRectValid*/, 1 /*refocusOn*/, 2 /*refocus_mode*/, 6 /*foregroundBlurScale*/, 12 /*curveVal*/, 700 /*farDistanceThres*/, 20 /*nearDistanceThres*/, 542 /*lowLightTriggerIsoHigh*/, 535 /*lowLightTriggerIsoLow*/,
+                   1280 /*ispOutWidth*/, 960 /*ispOutHeight*/, 0 /*c2sReSizeTypeMaster*/, 2 /*s2iReSizeTypeMaster*/, 1 /*c2sReSizeTypeSlave*/, 2 /*s2iReSizeTypeSlave*/,
+                   4096 /*masterPictureWidth*/,3072 /*masterPictureHeight*/, 3136 /*slavePictureWidth*/, 2352 /*slavePictureHeight*/, 0 /*isTeleMaster*/,
+              0 /*rotation*/, 1 /*focusRectValid*/, 1 /*refocusOn*/, 2 /*refocus_mode*/, 6 /*foregroundBlurScale*/, 12 /*curveVal*/, 300 /*farDistanceThres*/, 10 /*nearDistanceThres*/, 535 /*lowLightTriggerIsoHigh*/, 525 /*lowLightTriggerIsoLow*/,
+                   1440 /*ispOutWidth*/, 1080 /*ispOutHeight*/, 0 /*c2sReSizeTypeMaster*/, 2 /*s2iReSizeTypeMaster*/, 1 /*c2sReSizeTypeSlave*/, 2 /*s2iReSizeTypeSlave*/,
+                   4000 /*masterPictureWidth*/,3000 /*masterPictureHeight*/, 2816 /*slavePictureWidth*/, 2112 /*slavePictureHeight*/, 0 /*isTeleMaster*/,
+              180 /*3x rotation*/, 1 /*focusRectValid*/, 1 /*refocusOn*/, 2 /*refocus_mode*/, 6 /*foregroundBlurScale*/, 12 /*curveVal*/, 1200 /*farDistanceThres*/, 66 /*nearDistanceThres*/, 535 /*lowLightTriggerIsoHigh*/, 525 /*lowLightTriggerIsoLow*/,
+                   1280 /*ispOutWidth*/, 960 /*ispOutHeight*/, 0 /*c2sReSizeTypeMaster*/, 2 /*s2iReSizeTypeMaster*/, 1 /*c2sReSizeTypeSlave*/, 2 /*s2iReSizeTypeSlave*/,
+                   4096 /*masterPictureWidth*/,3072 /*masterPictureHeight*/, 1920 /*slavePictureWidth*/, 1440 /*slavePictureHeight*/, 1 /*isTeleMaster*/,
+              150 /*luxThreshold*/, 1 /*dualCaliType*/, 47/*focusDistanceThresholdFallingFace*/, 52/*focusDistanceThresholdRisingFace*/, 100 /*blurSlope*/, 0 /*blurIntercept*/,
+              1 /*isValid*/, 4096/*sensorOutWidthMaster*/, 3072/*sensorOutHeightMaster*/, 4096/*sensorCropWidthMaster*/, 3072/*sensorCropHeightMaster*/,
+                   3136/*sensorOutWidthSlave*/, 2352/*sensorOutHeightSlave*/,3136/*sensorCropWidthSlave*/, 2352/*sensorCropHeightSlave*/,1280/*ispOutWidthSlave*/,960/*ispOutHeightSlave*/,
+              0 /*isValid*/, 4000/*sensorOutWidthMaster*/, 3000/*sensorOutHeightMaster*/, 4000/*sensorCropWidthMaster*/, 3000/*sensorCropHeightMaster*/,
+                   2816/*sensorOutWidthSlave*/, 2112/*sensorOutHeightSlave*/,2816/*sensorCropWidthSlave*/, 2112/*sensorCropHeightSlave*/,1280/*ispOutWidthSlave*/,960/*ispOutHeightSlave*/,
+              1 /*isValid*/, 4096/*sensorOutWidthMaster*/, 3072/*sensorOutHeightMaster*/, 4096/*sensorCropWidthMaster*/, 3072/*sensorCropHeightMaster*/,
+                   1920/*sensorOutWidthSlave*/, 1440/*sensorOutHeightSlave*/,1920/*sensorCropWidthSlave*/, 1440/*sensorCropHeightSlave*/,1280/*ispOutWidthSlave*/,960/*ispOutHeightSlave*/,
+              270 /*2x rotation*/, 1 /*focusRectValid*/, 1 /*refocusOn*/, 2 /*refocus_mode*/, 6 /*foregroundBlurScale*/, 12 /*curveVal*/, 900 /*farDistanceThres*/, 32 /*nearDistanceThres*/, 535 /*lowLightTriggerIsoHigh*/, 525 /*lowLightTriggerIsoLow*/,
+                   1280 /*ispOutWidth*/, 960 /*ispOutHeight*/, 0 /*c2sReSizeTypeMaster*/, 2 /*s2iReSizeTypeMaster*/, 1 /*c2sReSizeTypeSlave*/, 2 /*s2iReSizeTypeSlave*/,
+                   4096 /*masterPictureWidth*/,3072 /*masterPictureHeight*/, 1664 /*slavePictureWidth*/, 1248 /*slavePictureHeight*/, 0 /*isTeleMaster*/,
+              1 /*isValid*/, 4096/*sensorOutWidthMaster*/, 3072/*sensorOutHeightMaster*/, 2048/*sensorCropWidthMaster*/, 1536/*sensorCropHeightMaster*/,
+                   3136/*sensorOutWidthSlave*/, 2352/*sensorOutHeightSlave*/,1664/*sensorCropWidthSlave*/, 1248/*sensorCropHeightSlave*/,1280/*ispOutWidthSlave*/,960/*ispOutHeightSlave*/,
+              270 /*6x rotation*/, 1 /*focusRectValid*/, 1 /*refocusOn*/, 2 /*refocus_mode*/, 6 /*foregroundBlurScale*/, 12 /*curveVal*/, 300 /*farDistanceThres*/, 20 /*nearDistanceThres*/, 535 /*lowLightTriggerIsoHigh*/, 525 /*lowLightTriggerIsoLow*/,
+                   1280 /*ispOutWidth*/, 960 /*ispOutHeight*/, 0 /*c2sReSizeTypeMaster*/, 2 /*s2iReSizeTypeMaster*/, 1 /*c2sReSizeTypeSlave*/, 2 /*s2iReSizeTypeSlave*/,
+                   4096 /*masterPictureWidth*/,3072 /*masterPictureHeight*/, 1664 /*slavePictureWidth*/, 1248 /*slavePictureHeight*/, 0 /*isTeleMaster*/,
+              1 /*isValid*/, 4096/*sensorOutWidthMaster*/, 3072/*sensorOutHeightMaster*/, 2048/*sensorCropWidthMaster*/, 1536/*sensorCropHeightMaster*/,
+                   3136/*sensorOutWidthSlave*/, 2352/*sensorOutHeightSlave*/,1664/*sensorCropWidthSlave*/, 1248/*sensorCropHeightSlave*/,1280/*ispOutWidthSlave*/,960/*ispOutHeightSlave*/,
+              270 /*4x rotation*/, 1 /*focusRectValid*/, 1 /*refocusOn*/, 2 /*refocus_mode*/, 6 /*foregroundBlurScale*/, 12 /*curveVal*/, 300 /*farDistanceThres*/, 20 /*nearDistanceThres*/, 535 /*lowLightTriggerIsoHigh*/, 525 /*lowLightTriggerIsoLow*/,
+                   1280 /*ispOutWidth*/, 960 /*ispOutHeight*/, 0 /*c2sReSizeTypeMaster*/, 2 /*s2iReSizeTypeMaster*/, 1 /*c2sReSizeTypeSlave*/, 2 /*s2iReSizeTypeSlave*/,
+                   4096 /*masterPictureWidth*/,3072 /*masterPictureHeight*/, 1664 /*slavePictureWidth*/, 1248 /*slavePictureHeight*/, 0 /*isTeleMaster*/,
+              1 /*isValid*/, 4096/*sensorOutWidthMaster*/, 3072/*sensorOutHeightMaster*/, 2048/*sensorCropWidthMaster*/, 1536/*sensorCropHeightMaster*/,
+                   3136/*sensorOutWidthSlave*/, 2352/*sensorOutHeightSlave*/,1664/*sensorCropWidthSlave*/, 1248/*sensorCropHeightSlave*/,1280/*ispOutWidthSlave*/,960/*ispOutHeightSlave*/,
+              270 /*1_5x rotation*/, 1 /*focusRectValid*/, 1 /*refocusOn*/, 2 /*refocus_mode*/, 6 /*foregroundBlurScale*/, 12 /*curveVal*/, 300 /*farDistanceThres*/, 20 /*nearDistanceThres*/, 542 /*lowLightTriggerIsoHigh*/, 535 /*lowLightTriggerIsoLow*/,
+                   1280 /*ispOutWidth*/, 960 /*ispOutHeight*/, 0 /*c2sReSizeTypeMaster*/, 2 /*s2iReSizeTypeMaster*/, 1 /*c2sReSizeTypeSlave*/, 2 /*s2iReSizeTypeSlave*/,
+                   4096 /*masterPictureWidth*/,3072 /*masterPictureHeight*/, 3136 /*slavePictureWidth*/, 2352 /*slavePictureHeight*/, 0 /*isTeleMaster*/,
+              1 /*isValid*/, 4096/*sensorOutWidthMaster*/, 3072/*sensorOutHeightMaster*/, 2694/*sensorCropWidthMaster*/, 2021/*sensorCropHeightMaster*/,
+                   3136/*sensorOutWidthSlave*/, 2352/*sensorOutHeightSlave*/,2063/*sensorCropWidthSlave*/, 1547/*sensorCropHeightSlave*/,1280/*ispOutWidthSlave*/,960/*ispOutHeightSlave*/,
+              180 /*3_7x rotation*/, 1 /*focusRectValid*/, 1 /*refocusOn*/, 2 /*refocus_mode*/, 6 /*foregroundBlurScale*/, 12 /*curveVal*/, 800 /*farDistanceThres*/, 60 /*nearDistanceThres*/, 535 /*lowLightTriggerIsoHigh*/, 525 /*lowLightTriggerIsoLow*/,
+                   1280 /*ispOutWidth*/, 960 /*ispOutHeight*/, 0 /*c2sReSizeTypeMaster*/, 2 /*s2iReSizeTypeMaster*/, 1 /*c2sReSizeTypeSlave*/, 2 /*s2iReSizeTypeSlave*/,
+                   4096 /*masterPictureWidth*/,3072 /*masterPictureHeight*/, 1920 /*slavePictureWidth*/, 1440 /*slavePictureHeight*/, 1 /*isTeleMaster*/,
+              1 /*isValid*/, 4096/*sensorOutWidthMaster*/, 3072/*sensorOutHeightMaster*/, 3168/*sensorCropWidthMaster*/, 2376/*sensorCropHeightMaster*/,
+                   1920/*sensorOutWidthSlave*/, 1440/*sensorOutHeightSlave*/,1485/*sensorCropWidthSlave*/, 1114/*sensorCropHeightSlave*/,1280/*ispOutWidthSlave*/,960/*ispOutHeightSlave*/,
+              270 /*6x fallback rotation*/, 1 /*focusRectValid*/, 1 /*refocusOn*/, 2 /*refocus_mode*/, 6 /*foregroundBlurScale*/, 12 /*curveVal*/, 300 /*farDistanceThres*/, 20 /*nearDistanceThres*/, 535 /*lowLightTriggerIsoHigh*/, 525 /*lowLightTriggerIsoLow*/,
+                   1280 /*ispOutWidth*/, 960 /*ispOutHeight*/, 0 /*c2sReSizeTypeMaster*/, 2 /*s2iReSizeTypeMaster*/, 1 /*c2sReSizeTypeSlave*/, 2 /*s2iReSizeTypeSlave*/,
+                   4096 /*masterPictureWidth*/,3072 /*masterPictureHeight*/, 1664 /*slavePictureWidth*/, 1248 /*slavePictureHeight*/, 0 /*isTeleMaster*/,
+              1 /*isValid*/, 4096/*sensorOutWidthMaster*/, 3072/*sensorOutHeightMaster*/, 2048/*sensorCropWidthMaster*/, 1536/*sensorCropHeightMaster*/,
+                   3136/*sensorOutWidthSlave*/, 2352/*sensorOutHeightSlave*/,1664/*sensorCropWidthSlave*/, 1248/*sensorCropHeightSlave*/,1280/*ispOutWidthSlave*/,960/*ispOutHeightSlave*/,
+              270 /*3x fallback rotation*/, 1 /*focusRectValid*/, 1 /*refocusOn*/, 2 /*refocus_mode*/, 6 /*foregroundBlurScale*/, 12 /*curveVal*/, 700 /*farDistanceThres*/, 46 /*nearDistanceThres*/, 542 /*lowLightTriggerIsoHigh*/, 535 /*lowLightTriggerIsoLow*/,
+                   1280 /*ispOutWidth*/, 960 /*ispOutHeight*/, 0 /*c2sReSizeTypeMaster*/, 2 /*s2iReSizeTypeMaster*/, 1 /*c2sReSizeTypeSlave*/, 2 /*s2iReSizeTypeSlave*/,
+                   1920 /*masterPictureWidth*/,1440 /*masterPictureHeight*/, 1664 /*slavePictureWidth*/, 1248 /*slavePictureHeight*/, 0 /*isTeleMaster*/,
+              1 /*isValid*/, 1920/*sensorOutWidthMaster*/, 1440/*sensorOutHeightMaster*/, 1920/*sensorCropWidthMaster*/, 1440/*sensorCropHeightMaster*/,
+                   1664/*sensorOutWidthSlave*/, 1248/*sensorOutHeightSlave*/,1664/*sensorCropWidthSlave*/, 1248/*sensorCropHeightSlave*/,1280/*ispOutWidthSlave*/,960/*ispOutHeightSlave*/",
+  "Comment": "JsonParamsRtb: include rear and front"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.rectify",
+  "Type": "Int32",
+  "Count": "8",
+  "Value": "  0,           3,                 -1,                    3441,        50,           210,              0,              0",
+  "Comment": "satCameraId, ultraWideCameraId, frontUltraWideCameraId, caliDataLen, estimateTime, runTimeMemSize,  userArcPreview, useArcCapture"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.rotatemirror",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "  42,           0",
+  "Comment": "estimateTime, runTimeMemSize"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.singleblur",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "  240,          50",
+  "Comment": "estimateTime, runTimeMemSize"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.upscale",
+  "Type": "Int32",
+  "Count": "7",
+  "Value": "  250,          50,             4,                         600,              16777216,      8192,            6144",
+  "Comment": "estimateTime, runTimeMemSize, numberOfProcessingThreads, ultraHighSharpen, bufferSize16M, outputWidth8000, outputWidth6000"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.watermark",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "  3,            0",
+  "Comment": "estimateTime, runTimeMemSize"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.videoblur",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "  270,          200",
+  "Comment": "estimateTime, runTimeMemSize"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.superphoto",
+  "Type": "Int32",
+  "Count": "22",
+  "Value": "450, 4096, 4096, 90, 90, 150, 300, 600, 150, 250, 350, 600, 1, 0, 0, 5, 0, 8, -1, 25, 20, 1",
+  "Comment": "estimateTime, inputStrideMax, inputScanlineMax, ShotGainThres, BoostGainThres, type0_2X, type0_2X, type0_2X, type1_2X, type1_3X, type1_4X, type1_6X, useLegacyMode,
+              luminanceNoiseReduction, sharpen, movingObjectNoiseRemoval, preSharpenStrength, effectiveFrames, baseFrame, numberOfNLMNeighbors, inputSharpnessThreshold, saveMotionFilteringMask"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.filter",
+  "Type": "Int32",
+  "Count": "11",
+  "Value": "
+            1,
+            20,
+            20,
+            4096,
+            4096,
+            -70, 44, 83, 25, -74, 98",
+  "Comment": "
+            paramCfgNum,
+            estimateTime,
+            estimateTime,
+            inputStrideMax,
+            inputScanlineMax,
+            vignetteAmount, vignetteFeather, vignetteHighlights, vignetteExposure, vignetteRoundness, vignetteSize"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.asd.vdlibneed.sensorname",
+  "Type": "String",
+  "Count": "10",
+  "Value": "
+            dodgetele,
+            dodgetele2,
+            dodgemain,
+            dodgeultrawide,
+            dodgefront,
+            dodgefront,
+            dodgefront,
+            dodgefront,
+            dodgefront,
+            dodgefront",
+  "Comment": "
+            suport max 10 config sensor type"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.asd.vdlibneed",
+  "Type": "Float",
+  "Count": "156",
+  "Value": "
+            20, 110, 20, 110, 2500, 1.0, 1.0, 0.3, 0, 0.3, 0, 1.35,
+            20, 110, 20, 110, 2500, 1.0, 1.0, 0.3, 0, 0.3, 0, 1.35,
+            12, 80, 8, 45, 1300, 1.0, 1.0, 0.3, 0, 0.3, 0, 1.35,
+            12, 80, 12, 70, 2500, 1.0, 1.0, 0.3, 0, 0.3, 0, 1.35,
+            36, 60, 36, 60, 5800, 1.0, 1.0, 0.3, 1.0, 0.3, 0, 1.35,
+            12, 80, 12, 70, 2500, 1.0, 1.0, 0.3, 0, 0.3, 0, 1.35,
+            12, 80, 12, 70, 2500, 1.0, 1.0, 0.3, 0, 0.3, 0, 1.35,
+            12, 80, 12, 70, 2500, 1.0, 1.0, 0.3, 0, 0.3, 0, 1.35,
+            12, 80, 12, 70, 2500, 1.0, 1.0, 0.3, 0, 0.3, 0, 1.35,
+            12, 80, 12, 70, 2500, 1.0, 1.0, 0.3, 0, 0.3, 0, 1.35,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.35,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.35,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.35",
+  "Comment": "
+            vd_hdr_threshold, vd_hdr_threshold_face, vd_hdr_threshold_of_llhdr, vd_hdr_threshold_face_of_llhdr, llhdr_iso_thd, vd_hdr_thd_scale, vd_hdr_thd_scale_lowlight, face_backlit_thd, face_backlit_ratio, face_backlit_thd_low, face_backlit_ratio_low, asd_focus_distance_threshold,
+            from sensor 1-sensor 13"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.gesture",
+  "Type": "Float",
+  "Count": "6",
+  "Value": "2, 0.75, 1, 2, 4, 1",
+  "Comment": "maxHandNum, clsSmoothFactor, narutoGesture, detectionFreq, delayFrameCount, scaling"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.bps.gamma",
+  "Type": "Float",
+  "Count": "257",
+  "Value": "0, 64, 128, 192, 256, 300, 344, 388, 432, 468, 504, 540, 576, 608, 640, 672, 705, 734, 763, 792, 821, 848,
+    875, 902, 929, 955, 981, 1007, 1033, 1057, 1081, 1105, 1129, 1151, 1173, 1195, 1217, 1239, 1261, 1283, 1305,
+    1326, 1347, 1368, 1389, 1409, 1429, 1449, 1469, 1488, 1507, 1526, 1545, 1564, 1583, 1602, 1621, 1639, 1657,
+    1675, 1693, 1711, 1729, 1747, 1765, 1782, 1799, 1816, 1833, 1850, 1867, 1884, 1901, 1917, 1933, 1949, 1965,
+    1981, 1997, 2013, 2029, 2045, 2062, 2078, 2094, 2109, 2124, 2139, 2154, 2169, 2184, 2199, 2214, 2229, 2244,
+    2259, 2274, 2289, 2304, 2319, 2334, 2348, 2362, 2376, 2390, 2404, 2418, 2432, 2446, 2460, 2474, 2488, 2502,
+    2515, 2528, 2541, 2554, 2567, 2580, 2593, 2606, 2620, 2634, 2648, 2662, 2675, 2688, 2701, 2714, 2726, 2738,
+    2750, 2762, 2775, 2788, 2801, 2814, 2826, 2838, 2850, 2862, 2875, 2888, 2901, 2914, 2926, 2938, 2950, 2962,
+    2974, 2986, 2998, 3010, 3022, 3034, 3046, 3058, 3069, 3080, 3091, 3102, 3114, 3126, 3138, 3150, 3161, 3172,
+    3183, 3194, 3206, 3218, 3230, 3242, 3253, 3264, 3275, 3286, 3297, 3308, 3319, 3330, 3341, 3352, 3363, 3374,
+    3385, 3396, 3407, 3419, 3430, 3441, 3452, 3463, 3473, 3483, 3493, 3503, 3514, 3525, 3536, 3547, 3557, 3567,
+    3577, 3587, 3598, 3609, 3620, 3631, 3641, 3651, 3661, 3671, 3681, 3691, 3701, 3711, 3721, 3731, 3741, 3751,
+    3761, 3771, 3781, 3791, 3801, 3811, 3821, 3831, 3841, 3851, 3861, 3871, 3881, 3891, 3901, 3911, 3921, 3931,
+    3941, 3951, 3960, 3969, 3978, 3987, 3997, 4007, 4017, 4027, 4036, 4045, 4054, 4063, 4071, 4079, 4087, 4095",
+  "Comment": "gammaTable"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.lsd",
+  "Type": "Float",
+  "Count": "4",
+  "Value": "7, 0.8, 10, 60",
+  "Comment": "frameNum, confidence, dirtyThreshold, frameThreshold"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.supereis.resetmap",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.ancsegbase",
+  "Type": "Int32",
+  "Count": "3",
+  "Value": "1, 0, 120",
+  "Comment": "major, minor, patch"
+},
+
+{
+  "VendorTag": "com.oplus.fwkBeauty",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.fwkOmoji",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.asd.libv2.params",
+  "Type": "Float",
+  "Count": "3",
+  "Value": "  6,              10,          1",
+  "Comment": "motionInterval, hdrInterval, isNewLib"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.qnn.libpath",
+  "Type": "String",
+  "Count": "1",
+  "Value": "libQnnHtp.so",
+  "Comment": "QNN dependency Path"
+},
+
+{
+  "VendorTag": "com.oplus.params.facerectify",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1",
+  "Comment": "front sensor 90°/80° support"
+},
+
+{
+  "VendorTag": "com.oplus.portrait.support.crop",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.preview.ux",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "4",
+  "Comment": "version3.0 set 1;version4.0:(light scene:1;heavy scene:2;draw scene:4;list pick:8;default 1)"
+},
+
+{
+  "VendorTag": "com.oplus.aps.preview.threadPriority",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "-15",
+  "Comment": "previewManagerR thread priority"
+},
+
+{
+  "VendorTag": "com.oplus.aps.ux.preview_rtb",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "4",
+  "Comment": "version3.0 set 1;version4.0:(light scene:1;heavy scene:2;draw scene:4;list pick:8;default 1)"
+},
+
+{
+  "VendorTag": "com.oplus.aps.priority.preview_rtb",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "-15"
+},
+
+{
+  "VendorTag": "com.oplus.asd.low.memory.params",
+  "Type": "String",
+  "Count": "2",
+  "Value": "120, 1500000000",
+  "Comment": "skipFrameNum, lowMemoryThreshold"
+},
+
+{
+  "VendorTag": "com.oplus.aps.ux.preview_default",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "4",
+  "Comment": "version3.0 set 1;version4.0:(light scene:1;heavy scene:2;draw scene:4;list pick:8;default 1)"
+},
+
+{
+  "VendorTag": "com.oplus.aps.turbohdr.sensorName",
+  "Type": "String",
+  "Count": "4",
+  "Value": "
+            dodgemain,
+            dodgefront,
+            dodgeultrawide,
+            dodgetele2",
+  "Comment": "
+          should arrange as role0, role1, role2, role3"
+},
+
+{
+  "VendorTag": "com.oplus.aps.turbohdr.2dol.memsize",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1400",
+  "Comment": "for 2dol turboraw runtimeinfo"
+},
+
+{
+  "VendorTag": "com.oplus.aps.turbohdr.izoom.memsize",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1000",
+  "Comment": "for izoom turboraw runtimeinfo"
+},
+
+{
+  "VendorTag": "com.oplus.aps.turbohdr.night.memsize",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1000",
+  "Comment": "for night turboraw runtimeinfo"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.pf.force.colormap",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "1, 0",
+  "Comment": "capture 3dlut support, preview 3dlut support"
+},
+
+{
+  "VendorTag": "com.oplus.aps.sat.logicCameraId",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.rearbokeh.fb.stage.processing",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.turboraw.thermallevel",
+  "Type": "Int32",
+  "Count": "21",
+  "Value": "24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 10, 10, -1, -1, -1, -1, -1, -1, -1, -1",
+  "Comment": "turboRaw snapshop burst num from thermallevel -1 to 19"
+},
+
+{
+  "VendorTag": "com.oplus.aps.parse.logic2physic",
+  "Type": "Int32",
+  "Count": "8",
+  "Value": "1 /*logic camera id front*/,        1 /*physic camera id front*/,
+            2 /*logic camera id wide*/,         0 /*physic camera id wide*/,
+            3 /*logic camera id ultra wide*/,   2 /*physic camera id ultra wide*/,
+            4 /*logic camera id tele*/,         3 /*physic camera id tele*/",
+  "Comment": "two number in a group, odd is logic camera id, even is physic camera id"
+},
+
+{
+  "VendorTag": "com.oplus.asd.support.aimoon",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.bokeh.config.refocus.v2",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.bokeh.b2ystride",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "64"
+},
+
+{
+  "VendorTag": "com.oplus.aps.professional.iso.cmp",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1",
+  "Comment": "support manualISO and sensitivity compair"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.basictone.use.8bit",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "0"
+},
+
+{
+  "VendorTag": "com.oplus.turbohdr.release.useless.buffer",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.asd.skipframe.cnt",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "9",
+  "Comment": "set asd skip frame count, default:2"
+},
+
+{
+  "VendorTag": "com.oplus.aps.previewdecison.skipcnt",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "3",
+  "Comment": "set previewdecision skip frame count, default:1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.localhdr.enable",
+  "Type": "Int32",
+  "Count": "33",
+  "Value": "1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0",
+   "Comment": "enable or disable localhdr of each capMode.
+               capMode: REAR_NORMAL, FRONT_NORMAL, REAR_BOKEH, FRONT_BOKEH, REAR_NIGHT, FRONT_NIGHT, PANORAMA, PROFESSIONAL, STICKER, VIDEO, FAST_VIDEO, SLOW_VIDEO, SUPER_TEXT, HIGH_PIC_SIZE, ULTRA_HIGH_DEFINITION, MACRO, GROUP_SHOT,  /* 0-16 */
+               STARMODE, STAR_VIDEO, MICROSCOPE, MICROSCOPE_VIDEO, TIMELAPSE_PRO, LONGEXPOSURE, STREET, ID_PHOTO, MOVIE, FISH_EYE, 3D_PHOTO, AI_HIGH_PIXEL, XPAN, SKIN_DETECT, PROFESSIONALFULL, GROUP_PHOTO    /* 17-32 */"
+},
+
+{
+  "VendorTag": "com.oplus.aps.localhdr.version",
+  "Type": "Float",
+  "Count": "1",
+  "Value": "4.0",
+  "Comment": "version"
+},
+
+{
+  "VendorTag": "com.oplus.aps.zslexif.enable",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.memmgr.support.gralloc",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1",
+  "Comment": "use gralloc interface to update colormeta, default:1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.memmgr.support.override.dataspace",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1",
+  "Comment": "support HardwareBuffer dataspace override, default:0"
+},
+
+{
+  "VendorTag": "com.oplus.asd.uninit.support",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "SUPERNIGHT_ASD_ENABLE",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.result.using.string",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1",
+  "Comment": "1: using string for aps result instead of meta 'com.oplus.aps.result.data'"
+},
+
+{
+  "VendorTag": "com.oplus.aps.quick.bitmap.support",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.qcom.platform.align",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "128",
+  "Comment": "QCOM QuickJpeg APSRefFrame buff align: 128 or 64"
+},
+
+{
+  "VendorTag": "com.oplus.bypass.resetcrop",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1",
+  "Comment": "QCOM 8750 will do resize in B2Y, noneed to cal cropregion"
+},
+
+{
+  "VendorTag": "com.oplus.aps.quick.bitmap.chdr.support",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.quick.bitmap.r2y.parallel",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.facerectify.perflevel",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "2",
+  "Comment": "facerectify perfhighlevel support"
+},
+
+{
+  "VendorTag": "com.oplus.ipe.need.adjust.crop",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1",
+  "Comment": "ipe crop need adjust, according to CameraHWConfiguration.config"
+},
+
+{
+  "VendorTag": "com.oplus.aps.bokeh.multicalibration.param",
+  "Type": "Int32",
+  "Count": "16",
+  "Value": "0, 1, 0, 105, 99999, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0",
+  "Comment": "support two modes, first group is T_W, second group is W_UW,
+              is multicalib supported, default range: 0~4(from near to far), 6 af distance(cm) thresholds for 5 ranges max"
+},
+
+{
+  "VendorTag": "com.oplus.aps.bokeh.calibration.vendortag",
+  "Type": "String",
+  "Count": "2",
+  "Value": "com.oplus.tele.calibration, com.oplus.tele.far.calibration",
+  "Comment": "the vendorTag of calibration of each range, max support 5 group, from near to far"
+},
+
+{
+  "VendorTag": "com.oplus.params.offline.mfnr.support",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "0",
+  "Comment": "offline MFNR support"
+},
+
+{
+  "VendorTag": "com.oplus.asd.portrait.filter.enable",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "0"
+},
+
+{
+  "VendorTag": "com.oplus.asd.libv2.support",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.asd.scene.update.immediately",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "7, 0",
+  "Comment": "ASDscene can update immediately, if want to set all scene, set count 1 and value is large than AI_SCN_COUNT, else set each scene and threshold you want"
+},
+
+{
+  "VendorTag": "com.oplus.aps.jpeg.thumbnail.support",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.offline.need.abort",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.rear.bokeh.ois",
+  "Type": "Float",
+  "Count": "21",
+  "Value": "0.03875357, 0.03875357, 0,
+            -0.07554769, 0.07015019, 0,
+             0.03875357, 0.03875357, 0,
+            -0.06969558, -0.06969558, 4000,
+            -0.06969558, -0.06969558, 4000,
+             0.03875357, 0.03875357, 0,
+            -0.07554769, 0.07015019, 0"
+},
+
+{
+  "VendorTag": "com.oplus.rear.bokeh.slave.ois",
+  "Type": "Float",
+  "Count": "21",
+  "Value": "0.03875357, 0.03875357, 0,
+            -0.07554769, 0.07015019, 0,
+             0.03875357, 0.03875357, 0,
+            -0.06969558, -0.06969558, 4000,
+            -0.06969558, -0.06969558, 4000,
+             0.03875357, 0.03875357, 0,
+            -0.07554769, 0.07015019, 0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.edge.filter.strength",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.upscale.frontzoomsupport",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.support.hw_jpeg",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.turbohdr.thread.priority",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "-19",
+  "Comment": "turbohdr thread priority"
+},
+
+{
+  "VendorTag": "com.oplus.aps.turbohdr.init.thread.priority",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "-15",
+  "Comment": "turbohdr init thread priority"
+},
+
+{
+  "VendorTag": "com.oplus.aps.selectframe.thread.priority",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "-19"
+},
+
+{
+  "VendorTag": "com.oplus.color.sensor.lux.params",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "1, 100"
+},
+
+{
+  "VendorTag": "com.oplus.aps.turbobokeh.support",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "1, 1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.turboraw.version",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "2"
+},
+
+{
+  "VendorTag": "com.oplus.aps.GrGb.switch",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.bokeh.effect.depth.null",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1",
+  "Comment": "support bokeh effect depth param null"
+},
+
+{
+  "VendorTag": "com.oplus.aps.support.bokeh2x.binning",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.turboHdrRegister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 183, 300, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.turboHdrProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 1334, 300, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.turboHdrUnregister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 0, 300, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.ipeProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 79, 300, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.superphotoRegister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 0, 300, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.superphotoProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 841, 300, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.superphotoUnregister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 0, 300, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.yuvsrRegister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 0, 300, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.yuvsrProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 841, 300, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.yuvsrUnregister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 0, 300, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.faceBaseRetouchRegister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 2, 2, 2, 2"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.faceBaseRetouchProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 435, 435, 435, 435"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.faceBaseRetouchUnregister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 1, 1, 1, 1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.perfectlyClearRegister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "GPU, 193, 300, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.perfectlyClearProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "GPU, 194, 300, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.perfectlyClearUnregister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "GPU, 0, 300, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.cfrRegister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 1, 300, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.cfrPreProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 0, 300, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.cfrProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 81, 300, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.cfrUnregister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 0, 300, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.faceRectifyFaceDetectRegister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 6, 47, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.faceRectifyRegisterV3",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 9, 9, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.faceRectifySegmentRegister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "GPU, 365, 584, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.faceRectifyPreProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 7, 6, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.faceRectifySegmentProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "GPU, 212, 280, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.faceRectifyFaceDetectProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 59, 59, 300, 300"
+},
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.faceRectifyLineDetectProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 35, 35, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.faceRectifyProcessV3",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 17, 130, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.faceRectifySegmentUnregister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 0, 0, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.faceRectifyFaceDetectUnregister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 0, 0, 0, 0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.faceRectifyUnRegisterV3",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 0, 0, 300, 300"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.doFBMakeupProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "GPU, 300, 300, 300, 84"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.doFacebeautyInitItf",
+  "Type": "String",
+  "Count": "5",
+  "Value": "GPU, 100,100,100,5"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.doFacebeautyProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "GPU, 400,400,400,245"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.doFacebeautyUninitItf",
+  "Type": "String",
+  "Count": "5",
+  "Value": "GPU, 30, 30, 2, 9"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.faceBeautyRegister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "GPU, 3, 0, 2, 0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.faceBeautyProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "GPU, 100, 140, 72, 0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.faceBeautyUnregister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "GPU, 2, 0, 6, 0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.filterRegister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "GPU, 10, 0, 10, 10"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.filterProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "GPU, 20, 0, 29, 20"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.filterUnregister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "GPU, 4, 0, 4, 4"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.faceInfoProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "GPU, 45, 65, 25, 63"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.faceInfoRegister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 31, 255, 47, 187"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.faceInfoUnregister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 2,1,30,14"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.mfllProcessParallel",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 450,450,450,450"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.rotateMirrorProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 10, 14, 6, 5"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.rotateMirrorRegister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 5, 10, 1, 10"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.rotateMirrorUnregister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 3, 15, 0, 15"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.doBokehBlurmapProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 300, 300, 300, 15"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.doBokehCommonInit",
+  "Type": "String",
+  "Count": "5",
+  "Value": "NPU, 150, 150, 150, 9"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.doBokehDepthInit",
+  "Type": "String",
+  "Count": "5",
+  "Value": "NPU, 120, 120, 120, 100"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.doBokehMattingInit",
+  "Type": "String",
+  "Count": "5",
+  "Value": "NPU, 150, 150, 150, 116"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.doBokehRefineProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 300, 300, 300, 11"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.doBokehRenderProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 300, 300, 300, 82"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.doBokehSegInit",
+  "Type": "String",
+  "Count": "5",
+  "Value": "NPU, 90, 90, 90, 96"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.doBokehSegmentProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "NPU, 300, 300, 300, 95"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.doChdrInitItf_sp",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 70, 70, 70, 1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.doChdrProcessItf_sp",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 500, 500, 500, 420"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.doChdrUninitItf_sp",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 30, 30, 30, 1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.singlePortraitProcess_V3",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 300,300,300,10"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.singlePortraitRegister_V3",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 120,120,120,2"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.singlePortraitUninitItf",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 15,15,15,2"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.bokehRegisterParal",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 0, 0, 198, 0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.initBokehProcessParam",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 0, 0, 4, 0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.doBokehCalDepthMap",
+  "Type": "String",
+  "Count": "5",
+  "Value": "DSP, 0, 0, 755, 0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.doBokehDoeffect",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 0, 0, 451, 0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.doBokehUinit",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 0, 0, 23, 0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.doBokehHdrInit",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 0, 0, 1, 0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.doBokehHdrProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 0, 0, 233, 0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.doBokehHdrUinit",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 0, 0, 1, 0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.bokehcopyHdrOutputBuffer",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 0, 0, 2, 0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.bokehCopyOutputBuffer",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 0, 0, 5, 0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.upScaleProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 1,70,0,50"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.upScaleRegister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 5, 10, 1, 10"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.upScaleUnregister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 2, 0, 0, 0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.watermarkProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 3, 50, 1, 3"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.watermarkRegister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 2, 10, 3, 2"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.watermarkUnregister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 2, 0, 0, 2"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.deblurRegister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 102, 102, 102, 102"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.deblurProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 8, 8, 8, 8"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.deblurUnregister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 0, 0, 0, 0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.mergeHdrRegister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 2, 2, 2, 2"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.mergeHdrProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 435, 435, 435, 435"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.mergeHdrUnregister",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 1, 1, 1, 1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.postProcess",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, 20, 20, 20, 20"
+},
+
+{
+  "VendorTag": "com.oplus.aps.asdPipeline.downScaleRatio",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "2",
+  "Comment": "asdBufferDownScaleRatio{algo support min size, asd:224*224 lsd:224*224 gesture:320*320}"
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline.deviceList",
+  "Type": "String",
+  "Count": "5",
+  "Value": "CPU, GPU, NPU, APU, DSP"
+},
+
+{
+  "VendorTag": "com.oplus.aps.hdr.montion.detect.bypass",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.inner.turboraw.orms.params",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "1, 1000",
+  "Comment": "turboraw orms params first params: 1. enable 0. unable  ,secondparams: rear timeout "
+},
+
+{
+  "VendorTag": "com.oplus.aps.front.inner.turboraw.orms.params",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "1, 700",
+  "Comment": "turboraw orms params first params: 1. enable 0. unable  ,secondparams:orms front timeout "
+},
+
+{
+  "VendorTag": "com.oplus.aps.autoPipeline",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.singleportrait.spotlight.enable",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.hybridhdr.runtime.memsize",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1000",
+  "Comment": "for hybridhdr runtimeinfo"
+},
+
+{
+  "VendorTag": "com.oplus.aps.hybridraw.support.version",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "2",
+  "Comment": "1:hr1.0 2:hr2.0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.hr.switch.sdtogan.params",
+  "Type": "Int32",
+  "Count": "4",
+  "Value": "1, 15, 10000, 3000000",
+  "Comment": "enable, count thresh, time thresh, memory threshold"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.fb.fbinitversion",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1",
+  "Comment": "0:init dependency image, 1:init no dependency"
+},
+
+{
+  "VendorTag": "com.oplus.aps.hybridraw.release.useless.buffer",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1",
+  "Comment": "for hybridraw useless frame buffer release, 0:off 1:on"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.availmemory.trigger",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "3072, 3072"
+},
+
+{
+  "VendorTag": "com.oplus.aps.extension.support.algos",
+    "Type": "String",
+    "Count": "7",
+    "Value": "aps_algo_turbo_hdr,
+              aps_algo_couple_hdr,
+              aps_algo_fusion,
+              aps_algo_bokeh,
+              aps_algo_rotate_mirror,
+              aps_algo_upscale,
+              aps_algo_raw_hdr"
+},
+
+{
+  "VendorTag": "com.oplus.aps.extension.support.previewalgos",
+    "Type": "String",
+    "Count": "3",
+    "Value": "preview_rtb,
+              preview_asd,
+              preview_default"
+},
+
+{
+  "VendorTag": "com.oplus.aps.refFrameSelect.baseIdxInit.enable",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "-1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.inner.hybridraw.orms.params",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "1, 8000",
+  "Comment": "hybridraw orms params first params: 1. enable 0. unable  ,secondparams:orms timeout "
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.quickshot.threshold",
+  "Type": "Int32",
+  "Count": "5",
+  "Value": "  3,                4,                 2650,             3900,           3800",
+  "Comment": "mainAlgoCntLimit, alterAlgoCntLimit, singleCapPeakMem, cameraMemLimit, cameraMemLimitLow"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.quickshot.threshold.rearnight",
+  "Type": "Int32",
+  "Count": "5",
+  "Value": "  5,                6,                 3000,             3900,           3800",
+  "Comment": "mainAlgoCntLimit, alterAlgoCntLimit, singleCapPeakMem, cameraMemLimit, cameraMemLimitLow"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.video.watermark",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "  1,                17",
+  "Comment": "mirrorInCodec, format"
+},
+
+{
+  "VendorTag": "com.oplus.aps.waterwark.pq.length",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "32"
+},
+
+{
+  "VendorTag": "com.oplus.aps.group.photo.enable",
+  "Type": "Int32",
+  "Count": "33",
+  "Value": "1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0",
+  "Comment": "enable or disable group photo of each capMode.
+              capMode: REAR_NORMAL, FRONT_NORMAL, REAR_BOKEH, FRONT_BOKEH, REAR_NIGHT, FRONT_NIGHT, PANORAMA, PROFESSIONAL, STICKER, VIDEO, FAST_VIDEO, SLOW_VIDEO, SUPER_TEXT, HIGH_PIC_SIZE, ULTRA_HIGH_DEFINITION, MACRO, GROUP_SHOT,  /* 0-16 */
+              STARMODE, STAR_VIDEO, MICROSCOPE, MICROSCOPE_VIDEO, TIMELAPSE_PRO, LONGEXPOSURE, STREET, ID_PHOTO, MOVIE, FISH_EYE, 3D_PHOTO, AI_HIGH_PIXEL, XPAN, SKIN_DETECT, PROFESSIONALFULL, GROUP_PHOTO    /* 17-32 */"
+},
+
+{
+  "VendorTag": "com.oplus.aps.group.face.crop",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1",
+  "Comment": "group using face rect to crop"
+},
+
+{
+  "VendorTag": "com.oplus.aps.group.photo.version",
+  "Type": "Float",
+  "Count": "1",
+  "Value": "1.5"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.quickshot.threshold.master",
+  "Type": "Int32",
+  "Count": "5",
+  "Value": "  8,                4,                 2550,             4100,           3850",
+  "Comment": "mainAlgoCntLimit, alterAlgoCntLimit, singleCapPeakMem, cameraMemLimit, cameraMemLimitLow"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.quickshot.threshold.rearbokeh",
+  "Type": "Int32",
+  "Count": "5",
+  "Value": "  5,                5,                 2800,             3900,           3700",
+  "Comment": "mainAlgoCntLimit, alterAlgoCntLimit, singleCapPeakMem, cameraMemLimit, cameraMemLimitLow"
+},
+
+{
+  "VendorTag": "com.oplus.camera.disable.log.for.mpversion",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.rectify.mapmode",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1",
+  "Comment": "0:IMAGE, 1:VIDE0, 2:BURST"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.rectify.registerPriority",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "-19",
+  "Comment": "threadpriority"
+},
+
+{
+  "VendorTag": "com.oplus.aps.support.disableNightSeTrigger.inputMode",
+  "Type": "Int32",
+  "Count": "33",
+  "Value": "1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0",
+  "Comment": "enable or disable daytime tripod camera_state of each capMode.
+              capMode: REAR_NORMAL, FRONT_NORMAL, REAR_BOKEH, FRONT_BOKEH, REAR_NIGHT, FRONT_NIGHT, PANORAMA, PROFESSIONAL, STICKER, VIDEO, FAST_VIDEO, SLOW_VIDEO, SUPER_TEXT, HIGH_PIC_SIZE, ULTRA_HIGH_DEFINITION, MACRO, GROUP_SHOT,  /* 0-16 */
+              STARMODE, STAR_VIDEO, MICROSCOPE, MICROSCOPE_VIDEO, TIMELAPSE_PRO, LONGEXPOSURE, STREET, ID_PHOTO, MOVIE, FISH_EYE, 3D_PHOTO, AI_HIGH_PIXEL, XPAN, SKIN_DETECT, PROFESSIONALFULL, GROUP_PHOTO    /* 17-32 */"
+},
+
+{
+  "VendorTag": "com.aps.params.supereis.camCfgCount",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "3"
+},
+
+{
+  "VendorTag": "com.oplus.aps.extension.logicCameraId",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.quickshot.supportQuickShotKey",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "0"
+},
+
+
+{
+  "VendorTag": "com.oplus.aps.params.videoblur.capture.version",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "4"
+},
+
+{
+  "VendorTag": "com.oplus.hyperlapse.video.version",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "2"
+},
+
+{
+  "VendorTag": "com.oplus.aps.jpegr.enable",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1",
+  "Comment": "switch to enable jpegr"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.facerestore.copy.p010.enable",
+  "Type": "Int32",
+  "Count": "33",
+  "Value": "0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0",
+  "Comment": "enable or disable group photo of each capMode.
+              capMode: REAR_NORMAL, FRONT_NORMAL, REAR_BOKEH, FRONT_BOKEH, REAR_NIGHT, FRONT_NIGHT, PANORAMA, PROFESSIONAL, STICKER, VIDEO, FAST_VIDEO, SLOW_VIDEO, SUPER_TEXT, HIGH_PIC_SIZE, ULTRA_HIGH_DEFINITION, MACRO, GROUP_SHOT,  /* 0-16 */
+              STARMODE, STAR_VIDEO, MICROSCOPE, MICROSCOPE_VIDEO, TIMELAPSE_PRO, LONGEXPOSURE, STREET, ID_PHOTO, MOVIE, FISH_EYE, 3D_PHOTO, AI_HIGH_PIXEL, XPAN, SKIN_DETECT, PROFESSIONALFULL, GROUP_PHOTO    /* 17-32 */"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.facerestore.darkportrait.luxIndex.limits",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "330, 1000",
+  "Comment" : "Lower limit and upper limit for facerestore darkportrait threshold"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.facerestore.zoomratio.divide",
+  "Type": "Float",
+  "Count": "1",
+  "Value": "7.0",
+  "Comment" : "zoomratio divide"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.facerestore.darkportrait.zoom.limits",
+  "Type": "Float",
+  "Count": "34",
+  "Value": "10.0, 0.0, 6.0, 0.0, 10.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",
+  "Comment": "facerestore darkportrait zoom limits of each capMode.
+              capMode: REAR_NORMAL, FRONT_NORMAL, REAR_BOKEH, FRONT_BOKEH, REAR_NIGHT, FRONT_NIGHT, PANORAMA, PROFESSIONAL, STICKER, VIDEO, FAST_VIDEO, SLOW_VIDEO, SUPER_TEXT, HIGH_PIC_SIZE, ULTRA_HIGH_DEFINITION, MACRO, GROUP_SHOT,  /* 0-16 */
+              STARMODE, STAR_VIDEO, MICROSCOPE, MICROSCOPE_VIDEO, TIMELAPSE_PRO, LONGEXPOSURE, STREET, ID_PHOTO, MOVIE, FISH_EYE, 3D_PHOTO, AI_HIGH_PIXEL, XPAN, SKIN_DETECT, PROFESSIONALFULL, GROUP_PHOTO, MASTER    /* 17-33 */"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.facerestore.candid.photo.enable",
+  "Type": "Int32",
+  "Count": "33",
+  "Value": "1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0",
+  "Comment": "enable or disable p010 copy of each capMode.
+              capMode: REAR_NORMAL, FRONT_NORMAL, REAR_BOKEH, FRONT_BOKEH, REAR_NIGHT, FRONT_NIGHT, PANORAMA, PROFESSIONAL, STICKER, VIDEO, FAST_VIDEO, SLOW_VIDEO, SUPER_TEXT, HIGH_PIC_SIZE, ULTRA_HIGH_DEFINITION, MACRO, GROUP_SHOT,  /* 0-16 */
+              STARMODE, STAR_VIDEO, MICROSCOPE, MICROSCOPE_VIDEO, TIMELAPSE_PRO, LONGEXPOSURE, STREET, ID_PHOTO, MOVIE, FISH_EYE, 3D_PHOTO, AI_HIGH_PIXEL, XPAN, SKIN_DETECT, PROFESSIONALFULL, GROUP_PHOTO    /* 17-32 */"
+},
+
+{
+  "VendorTag": "com.oplus.aps.interrrupt.exemption.list",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "14, 82",
+  "Comment": "The exemption list for algo. Defer job will not be interrupted when the list has been running or completed."
+},
+
+{
+  "VendorTag": "com.oplus.aps.turboCancel.supportCancel",
+  "Type": "Int32",
+  "Count": "5",
+  "Value": "1, 1, 1, 0, 0"
+},
+
+{
+  "VendorTag": "com.oplus.aps.interrupt.checklist",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "2"
+},
+
+{
+  "VendorTag": "com.oplus.aps.bypass.forbidden.pipeline",
+  "Type": "String",
+  "Count": "2",
+  "Value": "offlineIPEProc, turboHDRLPNR"
+},
+
+{
+  "VendorTag": "com.oplus.aps.storage.availmemory",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "3072"
+},
+
+{
+  "VendorTag": "com.oplus.aps.storage.pressure.io.level",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "3"
+},
+
+{
+  "VendorTag": "com.oplus.aps.deferjob.raw16.compression",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "0"
+},
+
+{
+  "VendorTag": "com.ocs.camera.ipu.meishe.filter.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.bokeh.hdr.spotlightimage.parallel",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.defercap.sched.cambg.switch",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1",
+  "Comment": "set 1 means aps capthread pool can be changed to camera-bg cgroup."
+},
+
+{
+  "VendorTag": "com.oplus.aps.implicitwatermark.enable",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1",
+  "Comment": "enable implicitwatermark for aigc"
+},
+
+{
+  "VendorTag": "com.oplus.monkey.params.threshold",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "65536, 524288"
+},
+
+{
+  "VendorTag": "com.oplus.aps.isp.wakelock.type",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1",
+  "Comment": "set 0: no need wakelock; 1: need wakelock; 2: need wakelock with timeout timer guard"
+},
+
+{
+  "VendorTag": "com.oplus.aps.basictone.version",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.mdhdr.enable",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.aps.algos.init.while.capture",
+  "Type": "String",
+  "Count": "1",
+  "Value": "aps_algo_merge_hdr"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.hdr",
+  "Type": "Int32",
+  "Count": "750",
+  "Value": "
+            5,
+            0, 15, 20, 8, 0, 0,
+            6,
+            0, 0, 0,
+            250, 350, 700, 900, 300, 500, 900, 1200,
+            9000, 12000, 16000, 21000, 12000, 15000, 19000, 24000,
+            25, 3, -8,
+            25, 3, -10,
+            25, 3, -8,
+            25, 3, 0,
+            25, 3, 0,
+            25, 3, 0,
+            1, 0, 1,
+            250, 350, 700, 900, 300, 500, 900, 1200,
+            13000, 16000, 19000, 27500, 16000, 19000, 23000, 28000,
+            25, 6, -3,
+            25, 3, -2,
+            25, 3, -2,
+            25, 3, 0,
+            25, 3, 0,
+            25, 3, 0,
+            1, 1, 1,
+            250, 350, 700, 900, 300, 500, 900, 1200,
+            8000, 11000, 15000, 20000, 11000, 14000, 18000, 23000,
+            25, 6, -3,
+            25, 3, -2,
+            25, 3, -2,
+            25, 3, 0,
+            25, 3, 0,
+            25, 3, 0,
+            2, 0, 1,
+            250, 350, 700, 900, 300, 500, 900, 1200,
+            9000, 12000, 16000, 21000, 12000, 15000, 19000, 24000,
+            25, 6, -3,
+            25, 3, -7,
+            25, 3, -4,
+            25, 3, 0,
+            25, 3, 0,
+            25, 3, 0,
+            3, 0, 1,
+            250, 350, 700, 900, 300, 500, 900, 1200,
+            9000, 14000, 20000, 23000, 12000, 15000, 19000, 24000,
+            25, 6, -3,
+            25, 3, -3,
+            25, 3, 2,
+            25, 3, 0,
+            25, 3, 0,
+            25, 3, 0,
+            4, 0, 1,
+            250, 350, 700, 900, 300, 500, 900, 1200,
+            9000, 14000, 20000, 23000, 12000, 15000, 19000, 24000,
+            25, 6, -3,
+            25, 3, -3,
+            25, 3, 2,
+            25, 3, 0,
+            25, 3, 0,
+            25, 3, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            470,
+            160",
+  "Comment": "
+            inputImgNum,
+            RingNoiseLevel,//0- QUALITY_FIRST, 1- PERFORMANCE_FIRST
+            SharpLevel, ColorDenoiseLevel, LuminDenoiseLevel, DenoiserType, needNcf,
+            paramCfgNum,
+            sensorType // index of sensorname in com.oplus.aps.params.hdr.sensorname
+            chromatixType, // index of chromatixname in com.oplus.aps.params.hdr.sensorname
+            triggerType, 0 - iso, 1 - lux
+            iso outdoor_start, outdoor_end, indoor_start, indoor_end, for face ...
+            lux outdoor_start, outdoor_end, indoor_start, indoor_end, for face ... real lux_index * 100
+            for no face input params
+            outdoor_tonelength, outdoor_saturation, outdoor_brightness
+            indoor_tonelength, indoor_saturation, indoor_brightness
+            indoor_tonelength, indoor_saturation, indoor_brightness
+            for face input params
+            outdoor_tonelength, outdoor_saturation, outdoor_brightness
+            indoor_tonelength, indoor_saturation, indoor_brightness
+            indoor_tonelength, indoor_saturation, indoor_brightness
+            paramCfg1 ~ paramCfg19,
+            estimateTime,
+            runTimeMemSize"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.llhdr",
+  "Type": "Int32",
+  "Count": "10",
+  "Value": "
+            8,
+            50, 0, 50, 15, 0, 0, 0,
+            18,
+            260",
+  "Comment": "
+            inputImgNum,
+            i32Intensity, i32LightIntensity, i32Saturation, i32SharpenIntensity, i32YReprocIntensity, i32UVReprocIntensity, bEnableFDInside
+            estimateTime,
+            runTimeMemSize"
+},
+
+{
+  "VendorTag": "com.oplus.aps.tag.filter.y2j",
+  "Type": "String",
+  "Count": "3",
+  "Value": "org.codeaurora.qcamera3.tintless.stats,
+            com.oplus.tunning.stats.debug,
+            917524",
+  "Comment": "ANDROID_SENSOR_PROFILE_HUE_SAT_MAP: 917524"
+},
+
+{
+  "VendorTag": "com.oplus.aps.tag.filter.y2y",
+  "Type": "String",
+  "Count": "3",
+  "Value": "org.codeaurora.qcamera3.tintless.stats,
+            com.oplus.tunning.stats.debug,
+            917524",
+  "Comment": "ANDROID_SENSOR_PROFILE_HUE_SAT_MAP: 917524"
+},
+
+{
+  "VendorTag": "com.oplus.aps.tag.filter.b2y",
+  "Type": "String",
+  "Count": "3",
+  "Value": "org.codeaurora.qcamera3.tintless.stats,
+            com.oplus.tunning.stats.debug,
+            917524",
+  "Comment": "ANDROID_SENSOR_PROFILE_HUE_SAT_MAP: 917524"
+},
+
+{
+  "VendorTag": "com.oplus.aps.tag.filter.mfnr",
+  "Type": "String",
+  "Count": "2",
+  "Value": "com.oplus.tunning.stats.debug,
+            917524",
+  "Comment": "ANDROID_SENSOR_PROFILE_HUE_SAT_MAP: 917524"
+},
+
+{
+  "VendorTag": "com.oplus.aps.tag.filter.r2j",
+  "Type": "String",
+  "Count": "3",
+  "Value": "org.codeaurora.qcamera3.tintless.stats,
+            com.oplus.tunning.stats.debug,
+            917524",
+  "Comment": "ANDROID_SENSOR_PROFILE_HUE_SAT_MAP: 917524"
+}
+]
+}
