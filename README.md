@@ -60,9 +60,10 @@ Mod comes in two packages:
 >
 
 > ## :warning: Installation and requirements
-> + OOS15 OnePlus13 (*tested on .821/.831 fws*)
+> + OOS15 OnePlus13 (*tested on ROW .821/.831 fws*)
 >   + COS users can test & report back if mod works there
 > + Magisk/KernelSU/APatch root
+> + OverlayFS
 
 > ## :incoming_envelope: Support
 > + [UCVM/OCVM telegram group](https://t.me/ucvm_gcam/24733)
