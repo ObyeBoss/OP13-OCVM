@@ -1,4 +1,4 @@
-![ocvm](https://imgur.com/VoojOSI "op13 ocvm")]()
+![ocvm](https://imgur.com/VoojOSI "op13 ocvm")](https://github.com/ObyeBoss/OP13-OCVM)
 # OCVM OnePlus13 OOS15 camera mod
 
 **OCVM** is a comprehensive camera mod that aims at optimizing and boosting all aspects of *OnePlus 13* imaging process. Given that Oppo camera stack provides an immense level of flexibility via whopping amount of comprehensive config interfaces to control many parts of imaging system directly. And with most important parts of the stack - HAL and its subcomponents being almost identical to those of *Oppo find x8 ultra* (*fx8u*). This opens a plethora of possibilities to experiment with and provide an all-rounder full-fledged package.
