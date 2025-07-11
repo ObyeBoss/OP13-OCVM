@@ -782,7 +782,7 @@
   "VendorTag": "com.oplus.aps.params.edge.filter.strength",
   "Type": "Int32",
   "Count": "1",
-  "Value": "1"
+  "Value": "0"
 },
 
 {

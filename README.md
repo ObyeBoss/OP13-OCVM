@@ -35,6 +35,9 @@ Mod comes in two packages:
 >
 >> - ### **Known bugs:**
 >>   - #### uwide to main camera switching in photo modes hangs camera
+>>     - caused by sensor patches. disable auto macro in preview ui & in settings -> save setting -> enable the auto macro switch
+>>   - #### green picture in jpeg master mode
+>>     - caused by sensor patches. only way to mitigate that is to remove */data/adb/modules/um8s_op13_ocvm/odm/lib64/com.qti.tuned.dodgemain.bin*. However this way all denoise disabling patches on sensor level will be lost.
 >>   - #### laggy portrait mode preview
 >
 >
@@ -57,6 +60,7 @@ Mod comes in two packages:
 >> - ### **Known bugs:**
 >>   - #### merge "bleed" in scenes where sun hits camera at an angle
 >>   - #### zoom levels above 10x don't save final image
+>>   - #### ! module doesn't work on magisk !
 >
 
 > ## :warning: Installation and requirements
