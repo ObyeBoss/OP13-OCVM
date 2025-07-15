@@ -198,8 +198,8 @@
         "skipHighlightDetectThInHighLux": 0.004,
         "ev12BasetagCountRateTH": 0.09,
         "ev0SaturatedFullCountTH": 0.0031,
-        "connectRegionRateThLo2f" : 0.021,
-        "connectRegionRateThLo3f" : 0.021,
+        "connectRegionRateThLo2f" : 0.019,
+        "connectRegionRateThLo3f" : 0.019,
         "satRateThEv0" : 0.004
     },
 

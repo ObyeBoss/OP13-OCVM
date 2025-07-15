@@ -83,7 +83,7 @@
         "PANTILT_STRENGTH_SMTH_4": 0.03,
         "PANTILT_STRENGTH_SMTH_5": 0.05,
         "PANTILT_STRENGTH_SMTH_6": 0.2,
-        "OISEN_CENTER_LIMIT": 1100,
+        "OISEN_CENTER_LIMIT": 1200,
         "OISEN_VB_RATIO": 0.5,
         "OISEN_K_MAX": 65,
         "OISEN_K_MAX_LOW": 25,
