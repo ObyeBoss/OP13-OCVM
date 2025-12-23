@@ -165,7 +165,7 @@ ui_print " "
 [ -z "$MINAPI" ] || { [ "$API" -lt "$MINAPI" ] && abort "! Your system API of $API is less than the minimum api of $MINAPI! Aborting!"; }
 [ -z "$MAXAPI" ] || { [ "$API" -gt "$MAXAPI" ] && abort "! Your system API of $API is greater than the maximum api of $MAXAPI! Aborting!"; }
 [ -z "$KSU" ] && KSU=false
-$KSU && { [ "$KSU_VER_CODE" -lt 11184 ] && require_new_ksu; }
+#$KSU && { [ "$KSU_VER_CODE" -lt 11184 ] && require_new_ksu; }
 [ -z "$APATCH" ] && APATCH=false
 [ "$APATCH" == "true" ] && KSU=true
 set -x
