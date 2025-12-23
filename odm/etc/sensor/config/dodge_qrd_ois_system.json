@@ -1,0 +1,303 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Surf", "RCM", "QRD", "HDK"],
+    "soc_id": ["618"]
+  },
+  "ois_system_bus":{
+    "owner": "sns_ois_system",
+    ".config":{
+      "owner": "sns_ois_system",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "7"
+      },
+      "qup_instance":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "1000"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/ois_vdd"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/ois_vdd"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "ois_name":{ "type": "str", "ver": "0",
+        "data": "dw9828c"
+      },
+      "override_config_type_mask":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "need_reverse_xy":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "update_pid":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "vsync_gpio_num":{ "type": "int", "ver": "0",
+        "data": "84"
+      },
+      "oisen_gpio_num":{ "type": "int", "ver": "0",
+        "data": "195"
+      },
+      "ois_probe_skip":{ "type": "int", "ver": "0",
+        "data": "0"
+      }
+    },
+    ".override_config_hw_id":{
+      "owner": "sns_ois_system",
+      "hw_id":{ "type": "int", "ver": "0",
+        "data": "40"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "12"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/ois_vdd"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/ois_vdd"
+      }
+    },
+    ".override_config_vcm_id":{
+      "owner": "sns_ois_system",
+      "vcm_id":{ "type": "int", "ver": "0",
+        "data": "7"
+      },
+      "ois_name":{ "type": "str", "ver": "0",
+        "data": "dw9828c"
+      }
+    }
+  },
+  "ois_system_tele_bus":{
+    "owner": "sns_ois_system_tele",
+    ".config":{
+      "owner": "sns_ois_system_tele",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "5"
+      },
+      "qup_instance":{ "type": "int", "ver": "0",
+        "data": "3"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "1000"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/ois_vdd_tele_zf_t0"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/ois_vdd_io_zf"
+      },
+      "avdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/ois_avdd_tele_zf_t0"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "ois_name":{ "type": "str", "ver": "0",
+        "data": "akm7322c"
+      },
+      "gpio_need_pull":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "pull_gpio":{ "type": "int", "ver": "0",
+        "data": "212"
+      },
+      "control_gpio":{ "type": "int", "ver": "0",
+        "data": "105"
+      },
+      "need_reverse_xy":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "update_pid":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "vsync_gpio_num":{ "type": "int", "ver": "0",
+        "data": "84"
+      },
+      "oisen_gpio_num":{ "type": "int", "ver": "0",
+        "data": "194"
+      },
+      "is_support_control_voltage":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "support_adjust_voltage_version":{ "type": "int", "ver": "0",
+        "data": "25"
+      },
+      "ois_probe_skip":{ "type": "int", "ver": "0",
+        "data": "0"
+      }
+    },
+    ".override_config_hw_id":{
+      "owner": "sns_ois_system_tele",
+      "hw_id":{ "type": "int", "ver": "0",
+        "data": "16"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "4"
+      },
+      "pull_gpio":{ "type": "int", "ver": "0",
+        "data": "212"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/ois_vdd_tele"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/ois_vdd_io_zf"
+      },
+      "avdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/ois_vdd_tele_zf"
+      },
+      "is_support_control_voltage":{ "type": "int", "ver": "0",
+        "data": "1"
+      }
+    },
+    ".override_config_vcm_id":{
+      "owner": "sns_ois_system_tele",
+      "vcm_id":{ "type": "int", "ver": "0",
+        "data": "257"
+      },
+      "ois_name":{ "type": "str", "ver": "0",
+        "data": "akm7322c"
+      },
+      "slave_config_x":{ "type": "int", "ver": "0",
+        "data": "52"
+      },
+      "slave_config_y":{ "type": "int", "ver": "0",
+        "data": "116"
+      }
+    }
+  },
+  "ois_system_gyro_bus":{
+    "owner": "sns_ois_system_gyro",
+    ".config":{
+      "owner": "sns_ois_system_gyro",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "3"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "1000"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/ois_vdd_gyro"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/ois_vdd_gyro"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "gyro_name":{ "type": "str", "ver": "0",
+        "data": "bmi260"
+      }
+    }
+  }
+}
