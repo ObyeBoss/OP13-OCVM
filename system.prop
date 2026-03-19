@@ -1,6 +1,14 @@
 ro.camera.req.fmq.size=0
 ro.camera.res.fmq.size=0
-vendor.arcsoft.turbo_re_lowdeblur=95
-vendor.arcsoft.turbo_re_fulldeblur=95
+vendor.arcsoft.turbo_re_lowdeblur=99
+vendor.arcsoft.turbo_re_fulldeblur=99
 vendor.arcsoft.turbo_re_sharpness=0
 vendor.arcsoft.turbo_re_full_sharpness=0
+vendor.arcsoft.turbo_hdr_ev0_deblur_level=99
+vendor.arcsoft.turbo_hdr_low_deblur_level=99
+vendor.arcsoft.turbo_hdr_sharpen_ev0=0
+vendor.arcsoft.turbo_hdr_sharpen_evlow=0
+vendor.arcsoft.turbo_hdr_sharpen_evlowlow=0
+vendor.arcsoft.turbo_hdr_tmc_sharpen_in=0
+vendor.arcsoft.turbo_hdr_tmc_sharpen_out=0
+ro.oplus.system.camera_enhance_brightness_factor=1.3

@@ -45,8 +45,11 @@ REPLACE="
 set_permissions() {
   [ -d "$MODPATH/system/bin" ] && set_perm_recursive $MODPATH/system/bin 0 0 0755 0755
   set_perm_recursive $MODPATH/tools 0 0 0755 0755
-  set_perm_recursive $MODPATH/odm/lib64/camera 0 0 0755 0644 u:object_r:vendor_file:s0
-  set_perm_recursive $MODPATH/odm/etc/camera 0 0 0755 0644 u:object_r:vendor_configs_file:s0
+  set_perm_recursive $MODPATH/system/odm/etc 0 0 0755 0644 u:object_r:vendor_configs_file:s0
+  set_perm_recursive $MODPATH/system/odm/lib64 0 0 0755 0644 u:object_r:same_process_hal_file:s0
+  set_perm_recursive $MODPATH/system/odm/lib64/hw 0 0 0755 0644 u:object_r:vendor_hal_file:s0
+  set_perm_recursive $MODPATH/system/odm/lib64/camera 0 0 0755 0644 u:object_r:vendor_file:s0
+  set_perm_recursive $MODPATH/system/vendor/lib64 0 0 0755 0644 u:object_r:vendor_file:s0
 
   # Note that all files/folders in magisk module directory have the $MODPATH prefix - keep this prefix on all of your files/folders
   # Some examples:

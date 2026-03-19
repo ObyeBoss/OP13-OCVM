@@ -1,6 +1,7 @@
+![ocvm](https://imgur.com/VoojOSI "op13 ocvm")]()
 # OCVM OnePlus13 OOS15 camera mod
 
-**OCVM** is a comprehensive camera mod that aims at optimizing and boosting all aspects of *OnePlus 13* imaging process. Given that Oppo camera stack provides an immense level of flexibility via whopping amount of comprehensive config interfaces to control many parts of imaging system directly. And with most important parts of the stack - HAL and its subcomponents being almost identical to those of *Oppo find x8 ultra* (*fx8u*). This opens a plethora of possibilities to experiment with and provide an all-rounder full-fledged package.
+**OCVM** is a camera mod that aims at optimizing and boosting all aspects of *OnePlus 13* imaging process. Given that Oppo camera stack provides an immense level of flexibility via whopping amount of comprehensive config interfaces to control many parts of imaging system directly. And with most important parts of the stack - HAL and its subcomponents being almost identical to those of *Oppo find x8 ultra* (*fx8u*). This opens a plethora of possibilities to experiment with and provide an all-rounder full-fledged package.
 Mod comes in two packages: 
 - A `main module` that is designed to optimize both the stock camera application boosting its quality, as well as third-party cameras (like *gcam*) but with less impact as that would require more low-level patches, that may (or may not) be added in the future. 
 - An `addon module` with processing ported from *Oppo find x8 ultra* that affects stock app only.
@@ -35,9 +36,6 @@ Mod comes in two packages:
 >
 >> - ### **Known bugs:**
 >>   - #### uwide to main camera switching in photo modes hangs camera
->>     - caused by sensor patches. disable auto macro in preview ui & in settings -> save setting -> enable the auto macro switch
->>   - #### green picture in jpeg master mode
->>     - caused by sensor patches. only way to mitigate that is to remove */data/adb/modules/um8s_op13_ocvm/odm/lib64/com.qti.tuned.dodgemain.bin*. However this way all denoise disabling patches on sensor level will be lost.
 >>   - #### laggy portrait mode preview
 >
 >
@@ -60,11 +58,10 @@ Mod comes in two packages:
 >> - ### **Known bugs:**
 >>   - #### merge "bleed" in scenes where sun hits camera at an angle
 >>   - #### zoom levels above 10x don't save final image
->>   - #### ! module doesn't work on magisk !
 >
 
 > ## :warning: Installation and requirements
-> + OOS15 OnePlus13 (*tested on ROW .821/.831 fws*)
+> + OOS15 OnePlus13 (*tested on .821/.831 fws*)
 >   + COS users can test & report back if mod works there
 > + Magisk/KernelSU/APatch root
 
