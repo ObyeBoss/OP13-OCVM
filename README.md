@@ -1,5 +1,5 @@
 ![ocvm](https://imgur.com/VoojOSI "op13 ocvm")]()
-# OCVM OnePlus13 OOS15 camera mod
+# OCVM | OnePlus13 camera mod
 
 **OCVM** is a camera mod that aims at optimizing and boosting all aspects of *OnePlus 13* imaging process. Given that Oppo camera stack provides an immense level of flexibility via whopping amount of comprehensive config interfaces to control many parts of imaging system directly. And with most important parts of the stack - HAL and its subcomponents being almost identical to those of *Oppo find x8 ultra* (*fx8u*). This opens a plethora of possibilities to experiment with and provide an all-rounder full-fledged package.
 Mod comes in two packages: 
@@ -61,9 +61,9 @@ Mod comes in two packages:
 >
 
 > ## :warning: Installation and requirements
-> + OOS15 OnePlus13 (*tested on .821/.831 fws*)
+> + OOS16 OnePlus13
 >   + COS users can test & report back if mod works there
-> + Magisk/KernelSU/APatch root
+> + Supported root methods: Magisk/KernelSU/KernelSU Next/APatch
 
 > ## :incoming_envelope: Support
 > + [UCVM/OCVM telegram group](https://t.me/ucvm_gcam/24733)
