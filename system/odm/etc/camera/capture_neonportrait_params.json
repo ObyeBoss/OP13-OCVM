@@ -1,0 +1,22 @@
+{
+    "Aperture_Shape": 0,
+    "Aperture_Size": 40,
+    "Bokeh_Smoothness": 1,
+    "Spot_Mode": 2,
+    "Spot_Threshold": 100,
+    "Spot_Transparency": 10,
+    "Spot_Weight": 3,
+    "Spot_Brightness": 5,
+    "Spot_Contrast": 10,
+    "Spot_Saturation": 25,
+    "Spot_MaxSize": 1000,
+    "Face_Bright": 5,
+    "focus_depth": -1.0,
+    "depthformat": 0,
+    "depthmode": 0,
+    "refocusmode": 3,
+    "cameramode": 0,
+    "perforlevel": 0,
+    "UseHairmask": 1,
+    "lutfilepath": "/odm/etc/camera/neon_yuv_LUT_64.bin"
+}

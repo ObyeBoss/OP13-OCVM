@@ -1,0 +1,235 @@
+{
+  "fallBackThreshold": {
+    "wide": 1.0,
+    "tele": 3.0,
+    "ultraTele": 6.0
+  },
+  "algoTraversalRely": {
+    "rely": [
+      {
+        "relyId": 1,
+        "condition": {
+          "eq": [
+            "currentPipeline",
+            0
+          ]
+        },
+        "relyResult": {
+          "lt": [
+            "zoomRatio",
+            1.0
+          ]
+        }
+      },
+      {
+        "relyId": 1,
+        "condition": {
+          "eq": [
+            "currentPipeline",
+            1
+          ]
+        },
+        "relyResult": {
+          "lt": [
+            "zoomRatio",
+            3.0
+          ]
+        }
+      },
+      {
+        "relyId": 1,
+        "condition": {
+          "eq": [
+            "currentPipeline",
+            2
+          ]
+        },
+        "relyResult": {
+          "egt": [
+            "zoomRatio",
+            2.8
+          ]
+        }
+      },
+      {
+        "relyId": 1,
+        "condition": {
+          "or": {
+            "eq": [
+              "tripodEnable",
+              1
+            ],
+            "not_eq": [
+              "tripodEnable",
+              0
+            ]
+          }
+        },
+        "relyResult": {
+          "eq": [
+            "captureMode",
+            "APS_CAPMODE_REAR_NIGHT"
+          ]
+        }
+      },
+      {
+        "relyId": 1,
+        "condition": {
+          "or": {
+            "eq": [
+              "paramsHolder->open_supertext",
+              1
+            ],
+            "not_eq": [
+              "paramsHolder->open_supertext",
+              0
+            ]
+          }
+        },
+        "relyResult": {
+          "eq": [
+            "captureMode",
+            "APS_CAPMODE_SUPER_TEXT"
+          ]
+        }
+      },
+      {
+        "relyId": 1,
+        "condition": {
+          "or": {
+            "eq": [
+              "highPicSizeEnable",
+              1
+            ],
+            "not_eq": [
+              "highPicSizeEnable",
+              0
+            ]
+          }
+        },
+        "relyResult": {
+          "eq": [
+            "captureMode",
+            "APS_CAPMODE_REAR_NORMAL"
+          ]
+        }
+      }
+    ],
+    "conditionalFilter": [
+      {
+        "condition": {
+          "or": {
+            "eq": [
+              "isFromExtension",
+              true
+            ],
+            "not_eq": [
+              "isFromExtension",
+              false
+            ]
+          }
+        },
+        "filterResult": false
+      },
+      {
+        "condition": {
+          "eq": [
+            "notNeedTest",
+            true
+          ]
+        },
+        "filterResult": false
+      },
+      {
+        "condition": {
+          "eq": [
+            "NeedTest",
+            false
+          ]
+        },
+        "filterResult": false
+      },
+      {
+        "condition": {
+          "eq": [
+            "captureMode",
+            "APS_CAPMODE_REAR_NIGHT"
+          ]
+        },
+        "filterResult": false
+      },
+      {
+        "condition": {
+          "eq": [
+            "aiSceneValue",
+            29
+          ]
+        },
+        "filterResult": false
+      },
+      {
+        "condition": {
+          "eq": [
+            "paramsHolder->current_burst_capture_type",
+            2
+          ]
+        },
+        "filterResult": false
+      },
+      {
+        "condition": {
+          "eq": [
+            "captureMode",
+            "APS_CAPMODE_SUPER_TEXT"
+          ]
+        },
+        "filterResult": false
+      },
+      {
+        "condition": {
+          "and": {
+            "eq": [
+              "isTouchActive",
+              false
+            ]
+          }
+        },
+        "filterResult": false
+      },
+      {
+        "condition": {
+          "gt": [
+            "paramsHolder->exposure_time_from_app->-1->int64",
+            66666666
+          ]
+        },
+        "filterResult": false
+      },
+      {
+        "condition": {
+          "eq": [
+            "paramsHolder->under_water_status",
+            true
+          ]
+        },
+        "filterResult": false
+      },
+      {
+        "condition": {
+          "or": {
+            "eq": [
+              "isFromMainMenu",
+              false
+            ],
+            "not_eq": [
+              "isFromMainMenu",
+              true
+            ]
+          }
+        },
+        "filterResult": false
+      }
+    ]
+  }
+}
+

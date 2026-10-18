@@ -1,5 +1,5 @@
 {
-  "file_version": 15.001,
+  "file_version": 16.025,
   "file_data": [
 
 {
@@ -262,7 +262,7 @@
   "Key": "NORMAL_SCENE_NIGHT_DELAY_SWITCH",
   "Type": "Int32",
   "Count": "2",
-  "Value": "360, 375"
+  "Value": "350, 360"
 },
 
 {
@@ -297,14 +297,14 @@
   "Key": "HQRAW_ISO_DELAY_SWITCH",
   "Type": "Int32",
   "Count": "2",
-  "Value": "1550, 1650"
+  "Value": "4950, 5050"
 },
 
 {
   "Key": "HQRAW_LUX_DELAY_SWITCH",
   "Type": "Int32",
   "Count": "2",
-  "Value": "400, 420"
+  "Value": "375, 385"
 },
 
 {
@@ -3292,6 +3292,13 @@
   "Type": "Int32",
   "Count": "1",
   "Value": "0"
+},
+
+{
+  "Key": "BINNING_SIZE_12M",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "4096, 3072"
 },
 
 {

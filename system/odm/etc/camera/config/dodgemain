@@ -1,5 +1,5 @@
 {
-  "file_version": 15.005,
+  "file_version": 16.025,
   "file_data": [
 
 {
@@ -292,7 +292,7 @@
   "Key": "NORMAL_SCENE_NIGHT_DELAY_SWITCH",
   "Type": "Int32",
   "Count": "2",
-  "Value": "400, 420"
+  "Value": "420, 425"
 },
 
 {
@@ -327,7 +327,7 @@
   "Key": "2XLBMF_QBC_LUX_SWITCH",
   "Type": "Int32",
   "Count": "2",
-  "Value": "390, 410",
+  "Value": "440, 450",
   "Comment": "Threshold for lux entering 2x lbmf qbc"
 },
 
@@ -343,7 +343,7 @@
   "Key": "HQRAW_ISO_DELAY_SWITCH",
   "Type": "Int32",
   "Count": "2",
-  "Value": "1550, 1650"
+  "Value": "4950, 5050"
 },
 
 {
@@ -372,7 +372,7 @@
   "Key": "PORTRAIT_TURBO_NIGHT_ENABLE",
   "Type": "Int32",
   "Count": "3",
-  "Value": "1, 400, 420",
+  "Value": "1, 420, 435",
   "Comment": "portrait mode turbonight enbale, daytime lux trigger, turbo night lux trigger"
 },
 
@@ -3497,6 +3497,27 @@
   "Type": "Int32",
   "Count": "2",
   "Value": "5888, 4416"
+},
+
+{
+  "Key": "BINNING_SIZE_12M",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "4096, 3072"
+},
+
+{
+  "Key": "MASTER_MODE_SHARPENING_SIGMA",
+  "Type": "Float",
+  "Count": "1",
+  "Value": "0"
+},
+
+{
+  "Key": "MASTER_MODE_SHARPENING_KERNEL_SIZE",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "0"
 },
 
 {

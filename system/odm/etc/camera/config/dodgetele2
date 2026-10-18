@@ -1,5 +1,5 @@
 {
-  "file_version": 15.003,
+  "file_version": 16.025,
   "file_data": [
 
 {
@@ -38,7 +38,7 @@
 
 {
   "Key": "NORMAL_RAWHDR_INDOOR_FACE_ISO",
-  "Value": "360"
+  "Value": "460"
 },
 
 {
@@ -282,7 +282,7 @@
   "Key": "NORMAL_SCENE_NIGHT_DELAY_SWITCH",
   "Type": "Int32",
   "Count": "2",
-  "Value": "390, 410"
+  "Value": "350, 360"
 },
 
 {
@@ -317,7 +317,7 @@
   "Key": "HQRAW_ISO_DELAY_SWITCH",
   "Type": "Int32",
   "Count": "2",
-  "Value": "1550, 1650"
+  "Value": "4950, 5050"
 },
 
 {
@@ -3326,6 +3326,34 @@
   "Type": "Int32",
   "Count": "2",
   "Value": "5888, 4416"
+},
+
+{
+  "Key": "Hybrid_RAW_BG_FROM_AE_Enable",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "0"
+},
+
+{
+  "Key": "MASTER_MODE_SHARPENING_SIGMA",
+  "Type": "Float",
+  "Count": "1",
+  "Value": "0"
+},
+
+{
+  "Key": "MASTER_MODE_SHARPENING_KERNEL_SIZE",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "0"
+},
+
+{
+  "Key": "BINNING_SIZE_12M",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "4096, 3072"
 },
 
 {
