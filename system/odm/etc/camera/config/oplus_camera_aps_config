@@ -529,8 +529,8 @@
   "VendorTag": "com.oplus.aps.parallelmode.support",
   "Type": "Int32",
   "Count": "34",
-  "Value": "1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0",
-  "Comment": "enable or disable parallelmode.
+  "Value": "1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0",
+  "Comment": "enable or disable parallelmode. ! CAN BREAK MODES, BETTER NOT TOUCH !
               capMode: REAR_NORMAL, FRONT_NORMAL, REAR_BOKEH, FRONT_BOKEH, REAR_NIGHT, FRONT_NIGHT, PANORAMA, PROFESSIONAL, STICKER, VIDEO, FAST_VIDEO, SLOW_VIDEO, SUPER_TEXT, HIGH_PIC_SIZE, ULTRA_HIGH_DEFINITION, MACRO, GROUP_SHOT,  /* 0-16 */
               STARMODE, STAR_VIDEO, MICROSCOPE, MICROSCOPE_VIDEO, TIMELAPSE_PRO, LONGEXPOSURE, STREET, ID_PHOTO, MOVIE, FISH_EYE, 3D_PHOTO, AI_HIGH_PIXEL, XPAN, SKIN_DETECT, PROFESSIONALFULL, GROUP_PHOTO, MASTER    /* 17-32 */"
 },
@@ -1475,7 +1475,7 @@
   "VendorTag": "com.oplus.aps.params.repair",
   "Type": "Int32",
   "Count": "3",
-  "Value": " 1,            0,         0",
+  "Value": "1,            0,         0",
   "Comment": "useOutModel, applyOrms, useLibVersion"
 },
 
@@ -1591,52 +1591,11 @@
 },
 
 {
-  "VendorTag": "com.oplus.aps.params.colorsensor.mcs",
-  "Type": "Int32",
-  "Count": "4",
-  "Value": "1, 0, 0, 1",
-  "Comment": "use7352, use_odnn, is_flip, local_awb_enable"
-},
-
-{
-  "VendorTag": "com.oplus.aps.params.colorsensor.mcs.model",
-  "Type": "String",
-  "Count": "2",
-  "Value": "
-          /odm/etc/camera/model_mwcs_params.bin,
-          /odm/etc/camera/model_mwcs_params_q.odnn",
-  "Comment": "cpu model & odnn model"
-},
-
-{
-  "VendorTag": "com.oplus.aps.params.colorsensor.mcs.adjust",
-  "Type": "Float",
-  "Count": "2",
-  "Value": "1.0, 1.0",
-  "Comment": "f1, nir"
-},
-
-{
   "VendorTag": "com.oplus.aps.params.asd.force.enable",
   "Type": "Int32",
   "Count": "1",
   "Value": "0",
   "Comment": "when hdr off, 20031 and 20061 also need hdrDetection to decsion whether run chdr or not"
-},
-
-{
-  "VendorTag": "com.oplus.aps.params.colorsensor.version",
-  "Type": "Int32",
-  "Count": "1",
-  "Value": "2"
-},
-
-{
-  "VendorTag": "com.oplus.aps.params.colorsensor.frameInfoSize",
-  "Type": "Int32",
-  "Count": "1",
-  "Value": "68",
-  "Comment": "resize color sensor head size"
 },
 
 {
@@ -2024,6 +1983,55 @@
   "Count": "5",
   "Value": "  1,                2,                 3400,             4600,           4600",
   "Comment": "mainAlgoCntLimit, alterAlgoCntLimit, singleCapPeakMem, cameraMemLimit, cameraMemLimitLow"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.colorsensor.version",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "2"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.colorsensor.frameInfoSize",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "68",
+  "Comment": "resize color sensor head size"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.colorsensor.seet",
+  "Type": "Int32",
+  "Count": "5",
+  "Value": "1, 0, 0, 1, 0",
+  "Comment": "seet_enable, seet_mirror_flip, seet_init_type, seet_init_region_mode, seet_use_npu"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.colorsensor.mcs",
+  "Type": "Int32",
+  "Count": "4",
+  "Value": "1, 0, 0, 1",
+  "Comment": "use7352, use_odnn, is_flip, local_awb_enable"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.colorsensor.mcs.model",
+  "Type": "String",
+  "Count": "2",
+  "Value": "
+          /odm/etc/camera/model_mwcs_params.bin,
+          /odm/etc/camera/model_mwcs_params_q.odnn",
+  "Comment": "cpu model & odnn model"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.colorsensor.mcs.adjust",
+  "Type": "Float",
+  "Count": "2",
+  "Value": "1.0, 1.0",
+  "Comment": "f1, nir"
 }
 ]
 }
