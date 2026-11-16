@@ -63,12 +63,27 @@
 
 {
   "Key": "NIGHT_SCENE_LUX_INDEX_NIGHT_MAX",
-  "Value": "999"
+  "Value": "460"
 },
 
 {
   "Key": "MOTION_CAPMODE_NIGHT_LUX_LIMIT",
   "Value": "460"
+},
+
+{
+  "Key": "NIGHT_SCENE_LUX_INDEX_INDOOR",
+  "Value": "355"
+},
+
+{
+  "Key": "NIGHT_SCENE_LUX_INDEX_NIGHT_1S",
+  "Value": "450"
+},
+
+{
+  "Key": "NIGHT_LUX_OFFSET",
+  "Value": "170"
 },
 
 {
@@ -1918,7 +1933,7 @@
   "VendorTag": "aps.params.bokeh.trigerLightSpotBright",
   "Type": "Int32",
   "Count": "2",
-  "Value": "12,15",
+  "Value": "5,1",
   "Comment": "night, normal"
 },
 
@@ -3231,7 +3246,7 @@
   "Key": "IS_SUPPORT_TURBORAW_FRAMELESS",
   "Type": "Int32",
   "Count": "6",
-  "Value": "1,0,0,1,0,0",
+  "Value": "1,1,1,1,1,1",
   "Comment": "enable or disable turboraw frameless of each sensorMode
               sensorMode: BINNING, IZOOM, 1DOL, 2DOL, IZOOM_2DOL,IZOOM_QBC"
 },
@@ -3332,7 +3347,7 @@
   "Key": "Hybrid_RAW_BG_FROM_AE_Enable",
   "Type": "Int32",
   "Count": "1",
-  "Value": "0"
+  "Value": "1"
 },
 
 {

@@ -1618,14 +1618,6 @@
           "value_type": "string"
         },
         {
-          "feature_name": "com.oplus.camera.feature.ten_bit",
-          "key": "com.oplus.camera.feature.ten_bit",
-          "supported_values": "",
-          "default_value": "",
-          "scopes": "main_menu",
-          "value_type": "string"
-        },
-        {
           "feature_name": "com.oplus.preview.capture.hdrMode",
           "key": "pref_camera_hdr_mode_key",
           "supported_values": "[off,on,auto]",
@@ -1727,14 +1719,6 @@
               ]
             }
           ]
-        },
-        {
-          "feature_name": "com.oplus.camera.feature.ten_bit",
-          "key": "com.oplus.camera.feature.ten_bit",
-          "supported_values": "",
-          "default_value": "",
-          "scopes": "main_menu",
-          "value_type": "string"
         },
         {
           "feature_name": "com.oplus.preview.capture.hdrMode",
@@ -7418,6 +7402,14 @@
           "default_value": "",
           "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
           "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.capture_defer",
+          "key": "com.oplus.camera.feature.capture_defer",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "string"
         }
       ],
       "front_main": [
@@ -7544,14 +7536,6 @@
               ]
             }
           ]
-        },
-        {
-          "feature_name": "com.oplus.camera.feature.ten_bit",
-          "key": "com.oplus.camera.feature.ten_bit",
-          "supported_values": "",
-          "default_value": "",
-          "scopes": "main_menu",
-          "value_type": "string"
         }
       ],
       "rear_sat": [
@@ -7777,14 +7761,6 @@
         }
       ],
       "rear_main": [
-        {
-          "feature_name": "com.oplus.camera.feature.ten_bit",
-          "key": "com.oplus.camera.feature.ten_bit",
-          "supported_values": "",
-          "default_value": "",
-          "scopes": "main_menu",
-          "value_type": "string"
-        },
         {
           "feature_name": "com.oplus.camera.feature.google_lens",
           "key": "key_show_googlelens_icon",
@@ -9085,14 +9061,6 @@
           ]
         },
         {
-          "feature_name": "com.oplus.camera.feature.ten_bit",
-          "key": "com.oplus.camera.feature.ten_bit",
-          "supported_values": "",
-          "default_value": "",
-          "scopes": "main_menu",
-          "value_type": "string"
-        },
-        {
           "feature_name": "com.oplus.camera.feature.remosaic",
           "key": "com.oplus.camera.feature.remosaic",
           "supported_values": "",
@@ -9920,14 +9888,6 @@
           ]
         },
         {
-          "feature_name": "com.oplus.camera.feature.ten_bit",
-          "key": "com.oplus.camera.feature.ten_bit",
-          "supported_values": "",
-          "default_value": "",
-          "scopes": "main_menu",
-          "value_type": "string"
-        },
-        {
           "feature_name": "com.oplus.camera.feature.remosaic",
           "key": "com.oplus.camera.feature.remosaic",
           "supported_values": "",
@@ -10663,14 +10623,6 @@
               ]
             }
           ]
-        },
-        {
-          "feature_name": "com.oplus.camera.feature.ten_bit",
-          "key": "com.oplus.camera.feature.ten_bit",
-          "supported_values": "",
-          "default_value": "",
-          "scopes": "main_menu",
-          "value_type": "string"
         },
         {
           "feature_name": "com.oplus.camera.feature.ai_scene",
@@ -11536,14 +11488,6 @@
           ]
         },
         {
-          "feature_name": "com.oplus.camera.feature.ten_bit",
-          "key": "com.oplus.camera.feature.ten_bit",
-          "supported_values": "",
-          "default_value": "",
-          "scopes": "main_menu",
-          "value_type": "string"
-        },
-        {
           "feature_name": "com.oplus.camera.feature.remosaic",
           "key": "com.oplus.camera.feature.remosaic",
           "supported_values": "",
@@ -12113,14 +12057,6 @@
               ]
             }
           ]
-        },
-        {
-          "feature_name": "com.oplus.camera.feature.ten_bit",
-          "key": "com.oplus.camera.feature.ten_bit",
-          "supported_values": "",
-          "default_value": "",
-          "scopes": "main_menu",
-          "value_type": "string"
         },
         {
           "feature_name": "com.oplus.camera.feature.remosaic",
@@ -12898,14 +12834,6 @@
           ]
         },
         {
-          "feature_name": "com.oplus.camera.feature.ten_bit",
-          "key": "com.oplus.camera.feature.ten_bit",
-          "supported_values": "",
-          "default_value": "",
-          "scopes": "main_menu",
-          "value_type": "string"
-        },
-        {
           "feature_name": "com.oplus.camera.feature.temperature_notification",
           "key": "key_active_flash_mode_for_temperature_notification",
           "supported_values": "[off,auto,on,torch]",
@@ -13128,6 +13056,32 @@
           ]
         },
         {
+          "feature_name": "com.oplus.preview.capture.hdrMode",
+          "key": "key_master_video_dolby",
+          "supported_values": "[on,off]",
+          "default_value": "on",
+          "scopes": "main_menu,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "flag_7": 1,
+          "dependency_rules": [
+            {
+              "trigger_condition": "on",
+              "actions": [
+                {
+                  "target_key": "pref_video_codec_key",
+                  "supported": "H264",
+                  "set_value": "H265"
+                },
+                {
+                  "target_key": "pref_log_video_key",
+                  "supported": "on",
+                  "set_value": "off"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "feature_name": "com.oplus.camera.feature.temperature_notification",
           "key": "key_active_flash_mode_for_temperature_notification",
           "supported_values": "[off,auto,on,torch]",
@@ -13152,14 +13106,6 @@
           "value_type": "string"
         },
         {
-          "feature_name": "com.oplus.preview.focus.mode",
-          "key": "com.oplus.preview.focus.mode",
-          "supported_values": "[2,3,4]",
-          "default_value": "2",
-          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
-          "value_type": "int"
-        },
-        {
           "feature_name": "com.oplus.configure.video.stabilization",
           "key": "com.oplus.configure.video.stabilization",
           "supported_values": "[video_stabilization]",
@@ -13169,11 +13115,11 @@
         },
         {
           "feature_name": "com.oplus.configure.video.stabilization",
-          "key": "pref_video_super_eis_key",
-          "supported_values": "[on,off]",
-          "default_value": "off",
+          "key": "pref_super_eis_wide_key",
+          "supported_values": "[true,false]",
+          "default_value": "FALSE",
           "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
-          "value_type": "string"
+          "value_type": "boolean"
         },
         {
           "feature_name": "com.oplus.configure.video.stabilization",
@@ -13181,7 +13127,112 @@
           "supported_values": "[on,off]",
           "default_value": "off",
           "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
-          "value_type": "string"
+          "value_type": "string",
+          "flag_7": 1,
+          "dependency_rules": [
+            {
+              "trigger_condition": "on",
+              "actions": [
+                {
+                  "target_key": "pref_super_eis_wide_key",
+                  "supported": "false",
+                  "set_value": "true"
+                },
+                {
+                  "target_key": "pref_master_video_fps_key",
+                  "supported": "120",
+                  "set_value": "30"
+                },
+                {
+                  "target_key": "pref_none_sat_tele_angle_key",
+                  "supported": "on",
+                  "set_value": "off"
+                },
+                {
+                  "target_key": "pref_master_video_size_key",
+                  "supported": "[video_size_4kuhd]",
+                  "set_value": "video_size_1080p"
+                }
+              ]
+            },
+            {
+              "trigger_condition": "off",
+              "actions": [
+                {
+                  "target_key": "pref_super_eis_wide_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_master_video_fps_restore_key",
+          "supported_values": "[true,false]",
+          "default_value": "FALSE",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "boolean"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_master_video_fps_key",
+          "supported_values": "[24,30,60]",
+          "default_value": "30",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "flag_7": 1,
+          "dependency_rules": [
+            {
+              "trigger_condition": "30",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_eis_key",
+                  "supported": "on",
+                  "set_value": "off"
+                },
+                {
+                  "target_key": "pref_super_eis_wide_key",
+                  "supported": "true",
+                  "set_value": "false"
+                },
+                {
+                  "target_key": "pref_none_sat_tele_angle_key",
+                  "supported": "on",
+                  "set_value": "off"
+                }
+              ]
+            },
+            {
+              "trigger_condition": "60",
+              "actions": [
+                {
+                  "target_key": "pref_none_sat_tele_angle_key",
+                  "supported": "on",
+                  "set_value": "off"
+                }
+              ]
+            },
+            {
+              "trigger_condition": "24",
+              "actions": [
+                {
+                  "target_key": "pref_none_sat_tele_angle_key",
+                  "supported": "on",
+                  "set_value": "off"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.preview.focus.mode",
+          "key": "com.oplus.preview.focus.mode",
+          "supported_values": "[2,3,4]",
+          "default_value": "2",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "int"
         },
         {
           "feature_name": "com.oplus.camera.feature.video_size",
@@ -13193,20 +13244,45 @@
         },
         {
           "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_master_video_size_restore_key",
+          "supported_values": "[true,false]",
+          "default_value": "FALSE",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "boolean"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
           "key": "pref_master_video_size_key",
           "supported_values": "[video_size_1080p,video_size_4kuhd]",
           "default_value": "video_size_1080p",
           "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
-          "value_type": "string"
+          "value_type": "string",
+          "flag_7": 1,
+          "dependency_rules": [
+            {
+              "trigger_condition": "video_size_4kuhd",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_eis_key",
+                  "supported": "on",
+                  "set_value": "off"
+                },
+                {
+                  "target_key": "pref_super_eis_wide_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
         },
         {
-          "feature_name": "com.oplus.configure.video.fps",
-          "key": "pref_master_video_fps_key",
-          "supported_values": "[30]",
-          "default_value": "30",
+          "feature_name": "com.oplus.camera.feature.front_light_effect",
+          "key": "com.oplus.camera.feature.front_light_effect",
+          "supported_values": "",
+          "default_value": "",
           "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
-          "value_type": "string",
-          "flag_7": 1
+          "value_type": "string"
         },
         {
           "feature_name": "com.oplus.camera.feature.face_detect",
@@ -13223,6 +13299,87 @@
           "default_value": "",
           "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
           "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "pref_none_sat_ultra_wide_angle_key",
+          "supported_values": "[on,off]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "dependency_rules": [
+            {
+              "trigger_condition": "on",
+              "actions": [
+                {
+                  "target_key": "key_master_video_dolby",
+                  "supported": "on",
+                  "set_value": "off"
+                }
+              ]
+            },
+            {
+              "trigger_condition": "off",
+              "actions": [
+                {
+                  "target_key": "pref_super_eis_wide_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "pref_none_sat_tele_angle_key",
+          "supported_values": "[on,off]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "dependency_rules": [
+            {
+              "trigger_condition": "on",
+              "actions": [
+                {
+                  "target_key": "key_master_video_dolby",
+                  "supported": "on",
+                  "set_value": "off"
+                }
+              ]
+            },
+            {
+              "trigger_condition": "off",
+              "actions": [
+                {
+                  "target_key": "pref_super_eis_wide_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "key_zoom_ultra_wide_angle",
+          "supported_values": "[true,false]",
+          "default_value": "false",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "boolean",
+          "flag_7": 1,
+          "dependency_rules": [
+            {
+              "trigger_condition": "false",
+              "actions": [
+                {
+                  "target_key": "pref_super_eis_wide_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
         },
         {
           "feature_name": "com.oplus.configure.video.encoder",
@@ -13247,16 +13404,109 @@
           "default_value": "",
           "scopes": "main_menu,quick_launch,watch,gimbal",
           "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.logvideo",
+          "key": "pref_log_video_key",
+          "supported_values": "[on,off]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[on]",
+              "actions": [
+                {
+                  "target_key": "key_master_video_dolby",
+                  "supported": "on",
+                  "set_value": "off"
+                },
+                {
+                  "target_key": "pref_none_sat_tele_angle_key",
+                  "supported": "on",
+                  "set_value": "off"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.frame_ratio",
+          "key": "pref_camera_photo_ratio_key",
+          "supported_values": "[16_9,2.39_1]",
+          "default_value": "16_9",
+          "scopes": "main_menu,quick_launch,watch,gimbal,other_app,video_other_app",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.audio_level_monitor",
+          "key": "com.oplus.camera.feature.audio_level_monitor",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,quick_launch,watch,gimbal",
+          "value_type": "string"
         }
       ],
       "rear_main": [
         {
+          "feature_name": "com.oplus.camera.feature.temperature_notification",
+          "key": "key_request_disable_flash_by_high_temperature",
+          "supported_values": "[off,on]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "dependency_rules": [
+            {
+              "trigger_condition": "off",
+              "actions": [
+                {
+                  "target_key": "key_disable_flash",
+                  "supported": "[on]",
+                  "set_value": "off"
+                }
+              ]
+            },
+            {
+              "trigger_condition": "on",
+              "actions": [
+                {
+                  "target_key": "key_disable_flash",
+                  "supported": "[off]",
+                  "set_value": "on"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "feature_name": "com.oplus.preview.flash.mode",
-          "key": "pref_camera_videoflashmode_key",
+          "key": "key_active_flash_mode",
           "supported_values": "[off,torch]",
           "default_value": "off",
           "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
-          "value_type": "string"
+          "value_type": "string",
+          "dependency_rules": [
+            {
+              "trigger_condition": "off",
+              "actions": [
+                {
+                  "target_key": "key_active_flash_mode_for_temperature_notification",
+                  "supported": "[auto,on,torch]",
+                  "set_value": "off"
+                }
+              ]
+            },
+            {
+              "trigger_condition": "torch",
+              "actions": [
+                {
+                  "target_key": "key_active_flash_mode_for_temperature_notification",
+                  "supported": "[off,auto,on]",
+                  "set_value": "torch"
+                }
+              ]
+            }
+          ]
         },
         {
           "feature_name": "com.oplus.preview.capture.hdrMode",
@@ -13276,23 +13526,34 @@
                   "set_value": "H265"
                 },
                 {
-                  "target_key": "pref_master_video_fps_key",
-                  "supported": "[30,60]",
-                  "set_value": "60"
+                  "target_key": "pref_master_video_size_key",
+                  "supported": "video_size_720p",
+                  "set_value": "video_size_1080p"
                 },
                 {
                   "target_key": "pref_log_video_key",
                   "supported": "on",
                   "set_value": "off"
-                },
-                {
-                  "target_key": "pref_master_video_size_key",
-                  "supported": "video_size_8k",
-                  "set_value": "video_size_4kuhd"
                 }
               ]
             }
           ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.temperature_notification",
+          "key": "key_active_flash_mode_for_temperature_notification",
+          "supported_values": "[off,auto,on,torch]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.preview.flash.mode",
+          "key": "pref_camera_videoflashmode_key",
+          "supported_values": "[off,torch]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
         },
         {
           "feature_name": "com.oplus.preview.flash.mode",
@@ -13301,14 +13562,6 @@
           "default_value": "off",
           "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
           "value_type": "string"
-        },
-        {
-          "feature_name": "com.oplus.preview.focus.mode",
-          "key": "com.oplus.preview.focus.mode",
-          "supported_values": "[2,3,4]",
-          "default_value": "2",
-          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
-          "value_type": "int"
         },
         {
           "feature_name": "com.oplus.configure.video.stabilization",
@@ -13320,11 +13573,11 @@
         },
         {
           "feature_name": "com.oplus.configure.video.stabilization",
-          "key": "pref_video_super_eis_key",
-          "supported_values": "[on,off]",
-          "default_value": "off",
+          "key": "pref_super_eis_wide_key",
+          "supported_values": "[true,false]",
+          "default_value": "FALSE",
           "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
-          "value_type": "string"
+          "value_type": "boolean"
         },
         {
           "feature_name": "com.oplus.configure.video.stabilization",
@@ -13332,46 +13585,56 @@
           "supported_values": "[on,off]",
           "default_value": "off",
           "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
-          "value_type": "string"
-        },
-        {
-          "feature_name": "com.oplus.camera.feature.video_size",
-          "key": "com.oplus.camera.feature.video_size",
-          "supported_values": "[video_size_1080p,video_size_4kuhd,video_size_8k]",
-          "default_value": "video_size_1080p",
-          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
-          "value_type": "string"
-        },
-        {
-          "feature_name": "com.oplus.camera.feature.video_size",
-          "key": "pref_master_video_size_key",
-          "supported_values": "[video_size_1080p,video_size_4kuhd,video_size_8k]",
-          "default_value": "video_size_1080p",
-          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
           "value_type": "string",
           "flag_7": 1,
           "dependency_rules": [
             {
-              "trigger_condition": "video_size_8k",
+              "trigger_condition": "on",
               "actions": [
                 {
-                  "target_key": "pref_video_codec_key",
-                  "supported": "H264",
-                  "set_value": "H265"
+                  "target_key": "pref_super_eis_wide_key",
+                  "supported": "false",
+                  "set_value": "true"
                 },
                 {
                   "target_key": "pref_master_video_fps_key",
-                  "supported": "[60,120]",
+                  "supported": "120",
                   "set_value": "30"
                 },
                 {
-                  "target_key": "pref_log_video_key",
-                  "supported": "off",
-                  "set_value": "on"
+                  "target_key": "pref_master_video_size_key",
+                  "supported": "[video_size_4kuhd]",
+                  "set_value": "video_size_1080p"
+                }
+              ]
+            },
+            {
+              "trigger_condition": "off",
+              "actions": [
+                {
+                  "target_key": "pref_super_eis_wide_key",
+                  "supported": "true",
+                  "set_value": "false"
                 }
               ]
             }
           ]
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_master_video_fps_restore_key",
+          "supported_values": "[true,false]",
+          "default_value": "FALSE",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "boolean"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_lasted_master_video_fps",
+          "supported_values": "[24,30,60]",
+          "default_value": "30",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
         },
         {
           "feature_name": "com.oplus.configure.video.fps",
@@ -13380,7 +13643,90 @@
           "default_value": "30",
           "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
           "value_type": "string",
-          "flag_7": 1
+          "flag_7": 1,
+          "dependency_rules": [
+            {
+              "trigger_condition": "30",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_eis_key",
+                  "supported": "on",
+                  "set_value": "off"
+                },
+                {
+                  "target_key": "pref_super_eis_wide_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.preview.focus.mode",
+          "key": "com.oplus.preview.focus.mode",
+          "supported_values": "[2,3,4]",
+          "default_value": "2",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "int"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_lasted_master_video_size",
+          "supported_values": "[video_size_1080p,video_size_4kuhd]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "com.oplus.camera.feature.video_size",
+          "supported_values": "[video_size_1080p,video_size_4kuhd]",
+          "default_value": "video_size_1080p",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_master_video_size_restore_key",
+          "supported_values": "[true,false]",
+          "default_value": "FALSE",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "boolean"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_master_video_size_key",
+          "supported_values": "[video_size_1080p,video_size_4kuhd]",
+          "default_value": "video_size_1080p",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "flag_7": 1,
+          "dependency_rules": [
+            {
+              "trigger_condition": "video_size_4kuhd",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_eis_key",
+                  "supported": "on",
+                  "set_value": "off"
+                },
+                {
+                  "target_key": "pref_super_eis_wide_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.front_light_effect",
+          "key": "com.oplus.camera.feature.front_light_effect",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
         },
         {
           "feature_name": "com.oplus.camera.feature.face_detect",
@@ -13397,6 +13743,44 @@
           "default_value": "",
           "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
           "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "pref_should_check_open_none_sat_tele_angle",
+          "supported_values": "[true,false]",
+          "default_value": "false",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "boolean"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "pref_none_sat_ultra_wide_angle_key",
+          "supported_values": "[on,off]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "flag_7": 1,
+          "dependency_rules": [
+            {
+              "trigger_condition": "on",
+              "actions": [
+                {
+                  "target_key": "key_master_video_dolby",
+                  "supported": "on",
+                  "set_value": "off"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "key_zoom_ultra_wide_angle",
+          "supported_values": "[true,false]",
+          "default_value": "false",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "boolean",
+          "flag_7": 1
         },
         {
           "feature_name": "com.oplus.configure.video.encoder",
@@ -13439,23 +13823,24 @@
                   "set_value": "off"
                 }
               ]
-            },
-            {
-              "trigger_condition": "[off]",
-              "actions": [
-                {
-                  "target_key": "pref_master_video_fps_key",
-                  "supported": "[120]",
-                  "set_value": "60"
-                },
-                {
-                  "target_key": "pref_master_video_size_key",
-                  "supported": "video_size_8k",
-                  "set_value": "video_size_4kuhd"
-                }
-              ]
             }
           ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.frame_ratio",
+          "key": "pref_camera_photo_ratio_key",
+          "supported_values": "[16_9,2.39_1]",
+          "default_value": "16_9",
+          "scopes": "main_menu,quick_launch,watch,gimbal,other_app,video_other_app",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.audio_level_monitor",
+          "key": "com.oplus.camera.feature.audio_level_monitor",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,quick_launch,watch,gimbal",
+          "value_type": "string"
         }
       ],
       "rear_wide": [
@@ -13544,14 +13929,6 @@
           "value_type": "string"
         },
         {
-          "feature_name": "com.oplus.preview.focus.mode",
-          "key": "com.oplus.preview.focus.mode",
-          "supported_values": "[2,3,4]",
-          "default_value": "2",
-          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
-          "value_type": "int"
-        },
-        {
           "feature_name": "com.oplus.configure.video.stabilization",
           "key": "com.oplus.configure.video.stabilization",
           "supported_values": "[video_stabilization]",
@@ -13561,11 +13938,11 @@
         },
         {
           "feature_name": "com.oplus.configure.video.stabilization",
-          "key": "pref_video_super_eis_key",
-          "supported_values": "[on,off]",
-          "default_value": "off",
+          "key": "pref_super_eis_wide_key",
+          "supported_values": "[true,false]",
+          "default_value": "FALSE",
           "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
-          "value_type": "string"
+          "value_type": "boolean"
         },
         {
           "feature_name": "com.oplus.configure.video.stabilization",
@@ -13573,7 +13950,58 @@
           "supported_values": "[on,off]",
           "default_value": "off",
           "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "flag_7": 1
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_master_video_fps_restore_key",
+          "supported_values": "[true,false]",
+          "default_value": "FALSE",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "boolean"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_lasted_master_video_fps",
+          "supported_values": "[24,30,60]",
+          "default_value": "30",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
           "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_master_video_fps_key",
+          "supported_values": "[24,30,60]",
+          "default_value": "30",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "flag_7": 1,
+          "dependency_rules": [
+            {
+              "trigger_condition": "30",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_eis_key",
+                  "supported": "on",
+                  "set_value": "off"
+                },
+                {
+                  "target_key": "pref_super_eis_wide_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.preview.focus.mode",
+          "key": "com.oplus.preview.focus.mode",
+          "supported_values": "[2,3,4]",
+          "default_value": "2",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "int"
         },
         {
           "feature_name": "com.oplus.camera.feature.video_size",
@@ -13585,17 +14013,694 @@
         },
         {
           "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_master_video_size_restore_key",
+          "supported_values": "[true,false]",
+          "default_value": "FALSE",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "boolean"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
           "key": "pref_master_video_size_key",
           "supported_values": "[video_size_1080p,video_size_4kuhd]",
           "default_value": "video_size_1080p",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "flag_7": 1,
+          "dependency_rules": [
+            {
+              "trigger_condition": "video_size_720p",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_eis_key",
+                  "supported": "on",
+                  "set_value": "off"
+                },
+                {
+                  "target_key": "pref_super_eis_wide_key",
+                  "supported": "true",
+                  "set_value": "false"
+                },
+                {
+                  "target_key": "pref_master_video_fps_key",
+                  "supported": "[30,60,120]",
+                  "set_value": "30"
+                }
+              ]
+            },
+            {
+              "trigger_condition": "video_size_4kuhd",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_eis_key",
+                  "supported": "on",
+                  "set_value": "off"
+                },
+                {
+                  "target_key": "pref_super_eis_wide_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.front_light_effect",
+          "key": "com.oplus.camera.feature.front_light_effect",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.face_detect",
+          "key": "com.oplus.camera.feature.face_detect",
+          "supported_values": "[on,off]",
+          "default_value": "on",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "com.oplus.camera.feature.zoom",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "pref_none_sat_ultra_wide_angle_key",
+          "supported_values": "[on,off]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "dependency_rules": [
+            {
+              "trigger_condition": "on",
+              "actions": [
+                {
+                  "target_key": "key_master_video_dolby",
+                  "supported": "on",
+                  "set_value": "off"
+                }
+              ]
+            },
+            {
+              "trigger_condition": "off",
+              "actions": [
+                {
+                  "target_key": "pref_super_eis_wide_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "key_zoom_ultra_wide_angle",
+          "supported_values": "[true,false]",
+          "default_value": "false",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "boolean",
+          "flag_7": 1,
+          "dependency_rules": [
+            {
+              "trigger_condition": "false",
+              "actions": [
+                {
+                  "target_key": "pref_super_eis_wide_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.configure.video.encoder",
+          "key": "com.oplus.configure.video.encoder",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.encoder",
+          "key": "pref_video_codec_key",
+          "supported_values": "[H264,H265]",
+          "default_value": "H264",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.master_video_params",
+          "key": "com.oplus.camera.feature.master_video_params",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.preview.capture.hdrMode",
+          "key": "key_master_video_dolby",
+          "supported_values": "[on,off]",
+          "default_value": "on",
+          "scopes": "main_menu,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "flag_7": 1,
+          "dependency_rules": [
+            {
+              "trigger_condition": "on",
+              "actions": [
+                {
+                  "target_key": "pref_video_codec_key",
+                  "supported": "H264",
+                  "set_value": "H265"
+                },
+                {
+                  "target_key": "pref_master_video_size_key",
+                  "supported": "video_size_720p",
+                  "set_value": "video_size_1080p"
+                },
+                {
+                  "target_key": "pref_log_video_key",
+                  "supported": "on",
+                  "set_value": "off"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.logvideo",
+          "key": "pref_log_video_key",
+          "supported_values": "[on,off]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[on]",
+              "actions": [
+                {
+                  "target_key": "key_master_video_dolby",
+                  "supported": "on",
+                  "set_value": "off"
+                },
+                {
+                  "target_key": "pref_master_video_size_key",
+                  "supported": "[video_size_4kuhd]",
+                  "set_value": "video_size_1080p"
+                },
+                {
+                  "target_key": "pref_master_video_fps_key",
+                  "supported": "[120]",
+                  "set_value": "30"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.frame_ratio",
+          "key": "pref_camera_photo_ratio_key",
+          "supported_values": "[16_9,2.39_1]",
+          "default_value": "16_9",
+          "scopes": "main_menu,quick_launch,watch,gimbal,other_app,video_other_app",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.audio_level_monitor",
+          "key": "com.oplus.camera.feature.audio_level_monitor",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,quick_launch,watch,gimbal",
+          "value_type": "string"
+        }
+      ],
+      "front_main": [
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_master_video_fps_restore_key",
+          "supported_values": "[true,false]",
+          "default_value": "FALSE",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "boolean"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_lasted_master_video_fps",
+          "supported_values": "[24,30,60]",
+          "default_value": "30",
           "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
           "value_type": "string"
         },
         {
           "feature_name": "com.oplus.configure.video.fps",
           "key": "pref_master_video_fps_key",
-          "supported_values": "[30]",
+          "supported_values": "[24,30,60]",
           "default_value": "30",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "dependency_rules": [
+            {
+              "trigger_condition": "24",
+              "actions": [
+                {
+                  "target_key": "key_master_video_dolby",
+                  "supported": "on",
+                  "set_value": "off"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "com.oplus.configure.video.stabilization",
+          "supported_values": "[video_stabilization]",
+          "default_value": "video_stabilization",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_master_video_eis_key",
+          "supported_values": "[on,off]",
+          "default_value": "on",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "flag_7": 1
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "com.oplus.camera.feature.video_size",
+          "supported_values": "[video_size_1080p,video_size_4kuhd]",
+          "default_value": "video_size_1080p",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_master_video_size_restore_key",
+          "supported_values": "[true,false]",
+          "default_value": "FALSE",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "boolean"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_lasted_master_video_size",
+          "supported_values": "[video_size_1080p,video_size_4kuhd]",
+          "default_value": "video_size_1080p",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_master_video_size_key",
+          "supported_values": "[video_size_1080p,video_size_4kuhd]",
+          "default_value": "video_size_1080p",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "flag_7": 1
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.face_detect",
+          "key": "com.oplus.camera.feature.face_detect",
+          "supported_values": "[on,off]",
+          "default_value": "on",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.encoder",
+          "key": "com.oplus.configure.video.encoder",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.encoder",
+          "key": "pref_video_codec_key",
+          "supported_values": "[H264,H265]",
+          "default_value": "H264",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.preview.flash.mode",
+          "key": "pref_camera_torch_mode_key",
+          "supported_values": "[off,auto,on]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.preview.capture.hdrMode",
+          "key": "key_master_video_dolby",
+          "supported_values": "[on,off]",
+          "default_value": "off",
+          "scopes": "main_menu,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "flag_7": 1,
+          "dependency_rules": [
+            {
+              "trigger_condition": "on",
+              "actions": [
+                {
+                  "target_key": "pref_video_codec_key",
+                  "supported": "H264",
+                  "set_value": "H265"
+                },
+                {
+                  "target_key": "pref_master_video_fps_key",
+                  "supported": "24",
+                  "set_value": "30"
+                },
+                {
+                  "target_key": "pref_log_video_key",
+                  "supported": "on",
+                  "set_value": "off"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "com.oplus.camera.feature.zoom",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.master_video_params",
+          "key": "com.oplus.camera.feature.master_video_params",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.logvideo",
+          "key": "pref_log_video_key",
+          "supported_values": "[on,off]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[on]",
+              "actions": [
+                {
+                  "target_key": "key_master_video_dolby",
+                  "supported": "on",
+                  "set_value": "off"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.frame_ratio",
+          "key": "pref_camera_photo_ratio_key",
+          "supported_values": "[16_9,2.39_1]",
+          "default_value": "16_9",
+          "scopes": "main_menu,quick_launch,watch,gimbal,other_app,video_other_app",
+          "value_type": "string",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[super,16_9]",
+              "actions": [
+                {
+                  "target_key": "key_update_inverse_position_ratio",
+                  "supported": "[off]",
+                  "set_value": "on"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.audio_level_monitor",
+          "key": "com.oplus.camera.feature.audio_level_monitor",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,quick_launch,watch,gimbal",
+          "value_type": "string"
+        }
+      ],
+      "rear_sat": [
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_master_video_fps_restore_key",
+          "supported_values": "[true,false]",
+          "default_value": "FALSE",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "boolean"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_lasted_master_video_fps",
+          "supported_values": "[24,30,60]",
+          "default_value": "30",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_master_video_fps_key",
+          "supported_values": "[24,30,60]",
+          "default_value": "30",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "flag_7": 1,
+          "dependency_rules": []
+        },
+        {
+          "feature_name": "com.oplus.preview.capture.hdrMode",
+          "key": "key_master_video_dolby",
+          "supported_values": "[on,off]",
+          "default_value": "on",
+          "scopes": "main_menu,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "flag_7": 1,
+          "dependency_rules": [
+            {
+              "trigger_condition": "on",
+              "actions": [
+                {
+                  "target_key": "pref_video_codec_key",
+                  "supported": "H264",
+                  "set_value": "H265"
+                },
+                {
+                  "target_key": "pref_none_sat_ultra_wide_angle_key",
+                  "supported": "on",
+                  "set_value": "off"
+                },
+                {
+                  "target_key": "pref_log_video_key",
+                  "supported": "on",
+                  "set_value": "off"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.temperature_notification",
+          "key": "key_request_disable_flash_by_high_temperature",
+          "supported_values": "[off,on]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "dependency_rules": [
+            {
+              "trigger_condition": "off",
+              "actions": [
+                {
+                  "target_key": "key_disable_flash",
+                  "supported": "[on]",
+                  "set_value": "off"
+                }
+              ]
+            },
+            {
+              "trigger_condition": "on",
+              "actions": [
+                {
+                  "target_key": "key_disable_flash",
+                  "supported": "[off]",
+                  "set_value": "on"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.preview.flash.mode",
+          "key": "key_active_flash_mode",
+          "supported_values": "[off,torch]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "dependency_rules": [
+            {
+              "trigger_condition": "off",
+              "actions": [
+                {
+                  "target_key": "key_active_flash_mode_for_temperature_notification",
+                  "supported": "[auto,on,torch]",
+                  "set_value": "off"
+                }
+              ]
+            },
+            {
+              "trigger_condition": "torch",
+              "actions": [
+                {
+                  "target_key": "key_active_flash_mode_for_temperature_notification",
+                  "supported": "[off,auto,on]",
+                  "set_value": "torch"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.temperature_notification",
+          "key": "key_active_flash_mode_for_temperature_notification",
+          "supported_values": "[off,auto,on,torch]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.preview.flash.mode",
+          "key": "pref_camera_videoflashmode_key",
+          "supported_values": "[off,torch]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.preview.flash.mode",
+          "key": "key_disable_flash",
+          "supported_values": "[off,on]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "com.oplus.configure.video.stabilization",
+          "supported_values": "[video_stabilization]",
+          "default_value": "video_stabilization",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_master_video_eis_key",
+          "supported_values": "[on,off]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "flag_7": 1,
+          "dependency_rules": [
+            {
+              "trigger_condition": "on",
+              "actions": [
+                {
+                  "target_key": "key_zoom_ultra_wide_angle",
+                  "supported": "false",
+                  "set_value": "true"
+                },
+                {
+                  "target_key": "pref_none_sat_ultra_wide_angle_key",
+                  "supported": "on",
+                  "set_value": "off"
+                },
+                {
+                  "target_key": "pref_master_video_fps_key",
+                  "supported": "120",
+                  "set_value": "30"
+                }
+              ]
+            },
+            {
+              "trigger_condition": "off",
+              "actions": [
+                {
+                  "target_key": "pref_super_eis_wide_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_super_eis_wide_key",
+          "supported_values": "[true,false]",
+          "default_value": "FALSE",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "boolean"
+        },
+        {
+          "feature_name": "com.oplus.preview.focus.mode",
+          "key": "com.oplus.preview.focus.mode",
+          "supported_values": "[2,3,4]",
+          "default_value": "2",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "int"
+        },
+        {
+          "feature_name": "com.oplus.sat.none.zoom.ratio",
+          "key": "com.oplus.sat.none.zoom.ratio",
+          "supported_values": "[0.6f,1.0f,5.0f]",
+          "default_value": "1.0f",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "float"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "com.oplus.camera.feature.video_size",
+          "supported_values": "[video_size_1080p,video_size_4kuhd]",
+          "default_value": "video_size_1080p",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_master_video_size_restore_key",
+          "supported_values": "[true,false]",
+          "default_value": "FALSE",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "boolean"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_lasted_master_video_size",
+          "supported_values": "[video_size_1080p,video_size_4kuhd]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_master_video_size_key",
+          "supported_values": "[video_size_1080p,video_size_4kuhd]",
+          "default_value": "video_size_1080p",
           "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
           "value_type": "string",
           "flag_7": 1
@@ -13633,8 +14738,82 @@
           "value_type": "string"
         },
         {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "pref_should_check_open_none_sat_tele_angle",
+          "supported_values": "[true,false]",
+          "default_value": "false",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "boolean"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "key_zoom_ultra_wide_angle",
+          "supported_values": "[true,false]",
+          "default_value": "false",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "boolean",
+          "flag_7": 1,
+          "dependency_rules": [
+            {
+              "trigger_condition": "false",
+              "actions": [
+                {
+                  "target_key": "pref_super_eis_wide_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "pref_none_sat_ultra_wide_angle_key",
+          "supported_values": "[on,off]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
           "feature_name": "com.oplus.camera.feature.master_video_params",
           "key": "com.oplus.camera.feature.master_video_params",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.logvideo",
+          "key": "pref_log_video_key",
+          "supported_values": "[on,off]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "flag_7": 1,
+          "dependency_rules": [
+            {
+              "trigger_condition": "[on]",
+              "actions": [
+                {
+                  "target_key": "key_master_video_dolby",
+                  "supported": "on",
+                  "set_value": "off"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.frame_ratio",
+          "key": "pref_camera_photo_ratio_key",
+          "supported_values": "[16_9,2.39_1]",
+          "default_value": "standard",
+          "scopes": "main_menu,quick_launch,watch,gimbal,other_app,video_other_app",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.audio_level_monitor",
+          "key": "com.oplus.camera.feature.audio_level_monitor",
           "supported_values": "",
           "default_value": "",
           "scopes": "main_menu,quick_launch,watch,gimbal",
@@ -14415,7 +15594,7 @@
         {
           "feature_name": "com.oplus.preview.flash.mode",
           "key": "pref_camera_flashmode_key",
-          "supported_values": "[off,torch]",
+          "supported_values": "[on,off,torch,auto]",
           "default_value": "off",
           "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
           "value_type": "string",
@@ -14504,6 +15683,102 @@
           "default_value": "",
           "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
           "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.preview.flash.mode",
+          "key": "key_disable_flash",
+          "supported_values": "[off,on]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.temperature_notification",
+          "key": "key_active_flash_mode_for_temperature_notification",
+          "supported_values": "[off,auto,on,torch]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.temperature_notification",
+          "key": "key_request_disable_flash_by_high_temperature",
+          "supported_values": "[off,on]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "dependency_rules": [
+            {
+              "trigger_condition": "off",
+              "actions": [
+                {
+                  "target_key": "key_disable_flash",
+                  "supported": "[on]",
+                  "set_value": "off"
+                }
+              ]
+            },
+            {
+              "trigger_condition": "on",
+              "actions": [
+                {
+                  "target_key": "key_disable_flash",
+                  "supported": "[off]",
+                  "set_value": "on"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.preview.flash.mode",
+          "key": "key_active_flash_mode",
+          "supported_values": "[on,off,torch,auto]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "dependency_rules": [
+            {
+              "trigger_condition": "off",
+              "actions": [
+                {
+                  "target_key": "key_active_flash_mode_for_temperature_notification",
+                  "supported": "[auto,on,torch]",
+                  "set_value": "off"
+                }
+              ]
+            },
+            {
+              "trigger_condition": "auto",
+              "actions": [
+                {
+                  "target_key": "key_active_flash_mode_for_temperature_notification",
+                  "supported": "[off,on,torch]",
+                  "set_value": "auto"
+                }
+              ]
+            },
+            {
+              "trigger_condition": "on",
+              "actions": [
+                {
+                  "target_key": "key_active_flash_mode_for_temperature_notification",
+                  "supported": "[off,auto,torch]",
+                  "set_value": "on"
+                }
+              ]
+            },
+            {
+              "trigger_condition": "torch",
+              "actions": [
+                {
+                  "target_key": "key_active_flash_mode_for_temperature_notification",
+                  "supported": "[off,auto,on]",
+                  "set_value": "torch"
+                }
+              ]
+            }
+          ]
         }
       ],
       "rear_main": [
@@ -14626,14 +15901,6 @@
     "xpan_mode": {
       "common": [
         {
-          "feature_name": "com.oplus.camera.feature.ten_bit",
-          "key": "com.oplus.camera.feature.ten_bit",
-          "supported_values": "",
-          "default_value": "",
-          "scopes": "main_menu",
-          "value_type": "string"
-        },
-        {
           "feature_name": "com.oplus.camera.feature.focus_exposure",
           "key": "com.oplus.camera.feature.focus_exposure",
           "supported_values": "",
@@ -14695,6 +15962,14 @@
           "supported_values": "[on,off]",
           "default_value": "off",
           "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.capture_defer",
+          "key": "com.oplus.camera.feature.capture_defer",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "",
           "value_type": "string"
         }
       ]
@@ -16705,6 +17980,750 @@
           "value_type": ""
         }
       ]
+    },
+    "movie_mode": {
+      "common": [
+        {
+          "feature_name": "com.oplus.camera.feature.assist_view",
+          "key": "com.oplus.camera.feature.assist_view",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.assist_view",
+          "key": "pref_assist_gradienter",
+          "supported_values": "[on,off]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.movie",
+          "key": "com.oplus.camera.feature.movie",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.focus_exposure",
+          "key": "com.oplus.camera.feature.focus_exposure",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        }
+      ],
+      "rear_tele": [
+        {
+          "feature_name": "com.oplus.camera.feature.temperature_notification",
+          "key": "key_request_disable_flash_by_high_temperature",
+          "supported_values": "[off,on]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "dependency_rules": [
+            {
+              "trigger_condition": "off",
+              "actions": [
+                {
+                  "target_key": "key_disable_flash",
+                  "supported": "[on]",
+                  "set_value": "off"
+                }
+              ]
+            },
+            {
+              "trigger_condition": "on",
+              "actions": [
+                {
+                  "target_key": "key_disable_flash",
+                  "supported": "[off]",
+                  "set_value": "on"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.preview.flash.mode",
+          "key": "key_active_flash_mode",
+          "supported_values": "[off,torch]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "dependency_rules": [
+            {
+              "trigger_condition": "off",
+              "actions": [
+                {
+                  "target_key": "key_active_flash_mode_for_temperature_notification",
+                  "supported": "[auto,on,torch]",
+                  "set_value": "off"
+                }
+              ]
+            },
+            {
+              "trigger_condition": "torch",
+              "actions": [
+                {
+                  "target_key": "key_active_flash_mode_for_temperature_notification",
+                  "supported": "[off,auto,on]",
+                  "set_value": "torch"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.temperature_notification",
+          "key": "key_active_flash_mode_for_temperature_notification",
+          "supported_values": "[off,auto,on,torch]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.preview.flash.mode",
+          "key": "pref_camera_videoflashmode_key",
+          "supported_values": "[off,torch]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.preview.flash.mode",
+          "key": "key_disable_flash",
+          "supported_values": "[off,on]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.preview.focus.mode",
+          "key": "com.oplus.preview.focus.mode",
+          "supported_values": "[1,3,4]",
+          "default_value": "1",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "int"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "com.oplus.configure.video.stabilization",
+          "supported_values": "[video_stabilization]",
+          "default_value": "video_stabilization",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_video_super_eis_key",
+          "supported_values": "[on,off]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_film_video_eis_menu",
+          "supported_values": "[on,off]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "com.oplus.camera.feature.video_size",
+          "supported_values": "[video_size_1080p]",
+          "default_value": "video_size_1080p",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_video_size_key",
+          "supported_values": "[video_size_1080p]",
+          "default_value": "video_size_1080p",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.face_detect",
+          "key": "com.oplus.camera.feature.face_detect",
+          "supported_values": "[on,off]",
+          "default_value": "on",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "com.oplus.camera.feature.zoom",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.encoder",
+          "key": "com.oplus.configure.video.encoder",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.encoder",
+          "key": "pref_video_codec_key",
+          "supported_values": "[H264,H265]",
+          "default_value": "H264",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        }
+      ],
+      "rear_ultra_tele": [
+        {
+          "feature_name": "com.oplus.camera.feature.temperature_notification",
+          "key": "key_request_disable_flash_by_high_temperature",
+          "supported_values": "[off,on]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "dependency_rules": [
+            {
+              "trigger_condition": "off",
+              "actions": [
+                {
+                  "target_key": "key_disable_flash",
+                  "supported": "[on]",
+                  "set_value": "off"
+                }
+              ]
+            },
+            {
+              "trigger_condition": "on",
+              "actions": [
+                {
+                  "target_key": "key_disable_flash",
+                  "supported": "[off]",
+                  "set_value": "on"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.preview.flash.mode",
+          "key": "key_active_flash_mode",
+          "supported_values": "[off,torch]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "dependency_rules": [
+            {
+              "trigger_condition": "off",
+              "actions": [
+                {
+                  "target_key": "key_active_flash_mode_for_temperature_notification",
+                  "supported": "[auto,on,torch]",
+                  "set_value": "off"
+                }
+              ]
+            },
+            {
+              "trigger_condition": "torch",
+              "actions": [
+                {
+                  "target_key": "key_active_flash_mode_for_temperature_notification",
+                  "supported": "[off,auto,on]",
+                  "set_value": "torch"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.temperature_notification",
+          "key": "key_active_flash_mode_for_temperature_notification",
+          "supported_values": "[off,auto,on,torch]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.preview.flash.mode",
+          "key": "pref_camera_videoflashmode_key",
+          "supported_values": "[off,torch]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.preview.flash.mode",
+          "key": "key_disable_flash",
+          "supported_values": "[off,on]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.preview.focus.mode",
+          "key": "com.oplus.preview.focus.mode",
+          "supported_values": "[1,3,4]",
+          "default_value": "1",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "int"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "com.oplus.configure.video.stabilization",
+          "supported_values": "[video_stabilization]",
+          "default_value": "video_stabilization",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_video_super_eis_key",
+          "supported_values": "[on,off]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_film_video_eis_menu",
+          "supported_values": "[on,off]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "com.oplus.camera.feature.video_size",
+          "supported_values": "[video_size_1080p]",
+          "default_value": "video_size_1080p",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_video_size_key",
+          "supported_values": "[video_size_1080p]",
+          "default_value": "video_size_1080p",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.face_detect",
+          "key": "com.oplus.camera.feature.face_detect",
+          "supported_values": "[on,off]",
+          "default_value": "on",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "com.oplus.camera.feature.zoom",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.encoder",
+          "key": "com.oplus.configure.video.encoder",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.encoder",
+          "key": "pref_video_codec_key",
+          "supported_values": "[H264,H265]",
+          "default_value": "H264",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        }
+      ],
+      "rear_main": [
+        {
+          "feature_name": "com.oplus.preview.flash.mode",
+          "key": "pref_camera_videoflashmode_key",
+          "supported_values": "[off,torch]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.preview.flash.mode",
+          "key": "key_disable_flash",
+          "supported_values": "[off,on]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.preview.focus.mode",
+          "key": "com.oplus.preview.focus.mode",
+          "supported_values": "[1,3,4]",
+          "default_value": "1",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "int"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "com.oplus.configure.video.stabilization",
+          "supported_values": "[video_stabilization]",
+          "default_value": "video_stabilization",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_video_super_eis_key",
+          "supported_values": "[on,off]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_film_video_eis_menu",
+          "supported_values": "[on,off]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "com.oplus.camera.feature.video_size",
+          "supported_values": "[video_size_1080p]",
+          "default_value": "video_size_1080p",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_video_size_key",
+          "supported_values": "[video_size_1080p]",
+          "default_value": "video_size_1080p",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.face_detect",
+          "key": "com.oplus.camera.feature.face_detect",
+          "supported_values": "[on,off]",
+          "default_value": "on",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "com.oplus.camera.feature.zoom",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.encoder",
+          "key": "com.oplus.configure.video.encoder",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.encoder",
+          "key": "pref_video_codec_key",
+          "supported_values": "[H264,H265]",
+          "default_value": "H264",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        }
+      ],
+      "rear_wide": [
+        {
+          "feature_name": "com.oplus.camera.feature.temperature_notification",
+          "key": "key_request_disable_flash_by_high_temperature",
+          "supported_values": "[off,on]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "dependency_rules": [
+            {
+              "trigger_condition": "off",
+              "actions": [
+                {
+                  "target_key": "key_disable_flash",
+                  "supported": "[on]",
+                  "set_value": "off"
+                }
+              ]
+            },
+            {
+              "trigger_condition": "on",
+              "actions": [
+                {
+                  "target_key": "key_disable_flash",
+                  "supported": "[off]",
+                  "set_value": "on"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.preview.flash.mode",
+          "key": "key_active_flash_mode",
+          "supported_values": "[off,torch]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string",
+          "dependency_rules": [
+            {
+              "trigger_condition": "off",
+              "actions": [
+                {
+                  "target_key": "key_active_flash_mode_for_temperature_notification",
+                  "supported": "[auto,on,torch]",
+                  "set_value": "off"
+                }
+              ]
+            },
+            {
+              "trigger_condition": "torch",
+              "actions": [
+                {
+                  "target_key": "key_active_flash_mode_for_temperature_notification",
+                  "supported": "[off,auto,on]",
+                  "set_value": "torch"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.temperature_notification",
+          "key": "key_active_flash_mode_for_temperature_notification",
+          "supported_values": "[off,auto,on,torch]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.preview.flash.mode",
+          "key": "pref_camera_videoflashmode_key",
+          "supported_values": "[off,torch]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.preview.flash.mode",
+          "key": "key_disable_flash",
+          "supported_values": "[off,on]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.preview.focus.mode",
+          "key": "com.oplus.preview.focus.mode",
+          "supported_values": "[1,3,4]",
+          "default_value": "1",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "int"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "com.oplus.configure.video.stabilization",
+          "supported_values": "[video_stabilization]",
+          "default_value": "video_stabilization",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_video_super_eis_key",
+          "supported_values": "[on,off]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_film_video_eis_menu",
+          "supported_values": "[on,off]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": [
+            {
+              "field": 14,
+              "wire": "varint",
+              "value": 114
+            },
+            {
+              "field": 12,
+              "wire": "32bit",
+              "value": "665f7469"
+            },
+            {
+              "field": 13,
+              "wire": "32bit",
+              "value": "655f6c61"
+            },
+            {
+              "field": 14,
+              "wire": "varint",
+              "value": 115
+            },
+            {
+              "field": 12,
+              "wire": "32bit",
+              "value": "5f6b6579"
+            }
+          ],
+          "key": [
+            {
+              "field": 14,
+              "wire": "varint",
+              "value": 114
+            },
+            {
+              "field": 12,
+              "wire": "32bit",
+              "value": "665f7469"
+            },
+            {
+              "field": 13,
+              "wire": "32bit",
+              "value": "655f6c61"
+            },
+            {
+              "field": 14,
+              "wire": "varint",
+              "value": 115
+            },
+            {
+              "field": 12,
+              "wire": "32bit",
+              "value": "5f6b6579"
+            }
+          ],
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.front.torch.color",
+          "key": "com.oplus.front.torch.color",
+          "supported_values": "",
+          "default_value": "#FFDBCC9C",
+          "scopes": "",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "com.oplus.camera.feature.video_size",
+          "supported_values": "[video_size_1080p]",
+          "default_value": "video_size_1080p",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_video_size_key",
+          "supported_values": "[video_size_1080p]",
+          "default_value": "video_size_1080p",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.face_detect",
+          "key": "com.oplus.camera.feature.face_detect",
+          "supported_values": "[on,off]",
+          "default_value": "on",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "com.oplus.camera.feature.zoom",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.encoder",
+          "key": "com.oplus.configure.video.encoder",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.configure.video.encoder",
+          "key": "pref_video_codec_key",
+          "supported_values": "[H264,H265]",
+          "default_value": "H264",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        }
+      ]
+    },
+    "under_water_mode": {
+      "common": [
+        {
+          "feature_name": "com.oplus.camera.feature.capture_defer",
+          "key": "com.oplus.camera.feature.capture_defer",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.under_water",
+          "key": "com.oplus.camera.feature.under_water",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "com.oplus.camera.feature.zoom",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.assist_view",
+          "key": "com.oplus.camera.feature.assist_view",
+          "supported_values": "",
+          "default_value": "",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.assist_view",
+          "key": "pref_assist_gradienter",
+          "supported_values": "[on,off]",
+          "default_value": "off",
+          "scopes": "main_menu,other_app,video_other_app,quick_launch,watch,gimbal",
+          "value_type": "string"
+        }
+      ]
     }
   },
   "overrides": {
@@ -17898,6 +19917,86 @@
           "default_value": "",
           "scopes": "",
           "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video.blur",
+          "key": "pref_video_blur_menu",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_should_check_open_none_sat_tele_angle",
+                  "supported": "false",
+                  "set_value": "true"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_video_super_eis_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_should_check_open_none_sat_tele_angle",
+                  "supported": "false",
+                  "set_value": "true"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.filter",
+          "key": "feature_filter_index",
+          "supported_values": "[0]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[0]",
+              "actions": [
+                {
+                  "target_key": "pref_should_check_open_none_sat_tele_angle",
+                  "supported": "false",
+                  "set_value": "true"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.preview.capture.hdrMode",
+          "key": "key_video_dolby",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_should_check_open_none_sat_tele_angle",
+                  "supported": "false",
+                  "set_value": "true"
+                }
+              ]
+            }
+          ]
         }
       ],
       "rear_wide": [
@@ -19002,6 +21101,138 @@
           "default_value": "",
           "scopes": "",
           "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.preview.capture.hdrMode",
+          "key": "key_video_dolby",
+          "supported_values": "[on]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video.blur",
+          "key": "pref_video_blur_menu",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_should_check_open_none_sat_tele_angle",
+                  "supported": "false",
+                  "set_value": "true"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_video_super_eis_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_should_check_open_none_sat_tele_angle",
+                  "supported": "false",
+                  "set_value": "true"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.filter",
+          "key": "feature_filter_index",
+          "supported_values": "[0]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[0]",
+              "actions": [
+                {
+                  "target_key": "pref_should_check_open_none_sat_tele_angle",
+                  "supported": "false",
+                  "set_value": "true"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.preview.capture.hdrMode",
+          "key": "key_video_dolby",
+          "supported_values": "[on,off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_should_check_open_none_sat_tele_angle",
+                  "supported": "false",
+                  "set_value": "true"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_video_fps_restore_key",
+          "supported_values": "[true]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_lasted_video_size",
+          "supported_values": "[video_size_4kuhd]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_video_size_key",
+          "supported_values": "[video_size_4kuhd]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "video_size_4kuhd",
+              "actions": [
+                {
+                  "target_key": "pref_should_check_open_none_sat_tele_angle",
+                  "supported": "false",
+                  "set_value": "true"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "pref_none_sat_ultra_wide_angle_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
         }
       ],
       "rear_tele": [
@@ -19488,6 +21719,1031 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    "master_video_mode": {
+      "front_main": [
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_master_video_eis_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "off",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_size_restore_key",
+                  "supported": "true",
+                  "set_value": "false"
+                },
+                {
+                  "target_key": "pref_master_video_fps_restore_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.preview.capture.hdrMode",
+          "key": "key_master_video_dolby",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_fps_restore_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_lasted_master_video_size",
+          "supported_values": "[video_size_1080p]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_master_video_eis_key",
+          "supported_values": "[on]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_master_video_eis_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_master_video_eis_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_master_video_size_restore_key",
+          "supported_values": "[true]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        }
+      ],
+      "rear_main": [
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_master_video_eis_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "off",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_fps_restore_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_master_video_fps_restore_key",
+          "supported_values": "[true]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_lasted_master_video_fps",
+          "supported_values": "[30]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_master_video_eis_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_fps_key",
+                  "supported": "60",
+                  "set_value": "30"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.preview.capture.hdrMode",
+          "key": "key_master_video_dolby",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_fps_key",
+                  "supported": "60",
+                  "set_value": "30"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_lasted_master_video_size",
+          "supported_values": "[video_size_8k]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_master_video_eis_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_fps_restore_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.preview.capture.hdrMode",
+          "key": "key_master_video_dolby",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_fps_restore_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_master_video_eis_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_size_restore_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.preview.capture.hdrMode",
+          "key": "key_master_video_dolby",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_size_restore_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_master_video_size_restore_key",
+          "supported_values": "[true]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_master_video_eis_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_should_check_open_none_sat_tele_angle",
+                  "supported": "false",
+                  "set_value": "true"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.preview.capture.hdrMode",
+          "key": "key_master_video_dolby",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_should_check_open_none_sat_tele_angle",
+                  "supported": "false",
+                  "set_value": "true"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_lasted_master_video_fps",
+          "supported_values": "[120]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_master_video_fps_restore_key",
+          "supported_values": "[true]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_master_video_size_key",
+          "supported_values": "[video_size_720p,video_size_1080p]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[video_size_720p,video_size_1080p]",
+              "actions": [
+                {
+                  "target_key": "key_zoom_ultra_wide_angle",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_master_video_fps_key",
+          "supported_values": "[60]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "pref_none_sat_ultra_wide_angle_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_master_video_size_key",
+          "supported_values": "[video_size_4kuhd]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_master_video_fps_key",
+          "supported_values": "[30]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "30",
+              "actions": [
+                {
+                  "target_key": "key_zoom_ultra_wide_angle",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "pref_none_sat_ultra_wide_angle_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        }
+      ],
+      "rear_wide": [
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_master_video_eis_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_master_video_fps_restore_key",
+          "supported_values": "[false]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_master_video_eis_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "off",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_fps_restore_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_master_video_fps_restore_key",
+          "supported_values": "[true]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_lasted_master_video_fps",
+          "supported_values": "[30]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_master_video_eis_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_fps_restore_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.preview.capture.hdrMode",
+          "key": "key_master_video_dolby",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_fps_restore_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_master_video_eis_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_size_restore_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.preview.capture.hdrMode",
+          "key": "key_master_video_dolby",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_size_restore_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_master_video_size_restore_key",
+          "supported_values": "[true]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_master_video_size_key",
+          "supported_values": "[video_size_720p,video_size_1080p]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[video_size_720p,video_size_1080p]",
+              "actions": [
+                {
+                  "target_key": "pref_none_sat_ultra_wide_angle_key",
+                  "supported": "on",
+                  "set_value": "off"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_master_video_fps_key",
+          "supported_values": "[60]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "pref_none_sat_ultra_wide_angle_key",
+          "supported_values": "[on]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_master_video_size_key",
+          "supported_values": "[video_size_4kuhd]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_master_video_fps_key",
+          "supported_values": "[30]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "30",
+              "actions": [
+                {
+                  "target_key": "pref_none_sat_ultra_wide_angle_key",
+                  "supported": "on",
+                  "set_value": "off"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "pref_none_sat_ultra_wide_angle_key",
+          "supported_values": "[on]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        }
+      ],
+      "rear_sat": [
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_master_video_eis_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_master_video_fps_restore_key",
+          "supported_values": "[false]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_master_video_eis_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_fps_restore_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.preview.capture.hdrMode",
+          "key": "key_master_video_dolby",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_fps_restore_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_master_video_eis_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_fps_restore_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.preview.capture.hdrMode",
+          "key": "key_master_video_dolby",
+          "supported_values": "[on]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_lasted_master_video_fps",
+          "supported_values": "[120]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_master_video_eis_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_should_check_open_none_sat_tele_angle",
+                  "supported": "false",
+                  "set_value": "true"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.preview.capture.hdrMode",
+          "key": "key_master_video_dolby",
+          "supported_values": "[on,off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_should_check_open_none_sat_tele_angle",
+                  "supported": "false",
+                  "set_value": "true"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_lasted_master_video_fps",
+          "supported_values": "[120]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_master_video_fps_restore_key",
+          "supported_values": "[true]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_master_video_eis_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_size_restore_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.preview.capture.hdrMode",
+          "key": "key_master_video_dolby",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_size_restore_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_master_video_size_restore_key",
+          "supported_values": "[true]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.configure.video.stabilization",
+          "key": "pref_master_video_eis_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[off]",
+              "actions": [
+                {
+                  "target_key": "pref_master_video_size_restore_key",
+                  "supported": "true",
+                  "set_value": "false"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.preview.capture.hdrMode",
+          "key": "key_master_video_dolby",
+          "supported_values": "[on]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_master_video_size_restore_key",
+          "supported_values": "[true]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_lasted_master_video_size",
+          "supported_values": "[video_size_4kuhd]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_video_size_key",
+          "supported_values": "[video_size_4kuhd]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "video_size_4kuhd",
+              "actions": [
+                {
+                  "target_key": "pref_none_sat_ultra_wide_angle_key",
+                  "supported": "on",
+                  "set_value": "off"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_master_video_fps_key",
+          "supported_values": "[60]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "60",
+              "actions": [
+                {
+                  "target_key": "pref_none_sat_ultra_wide_angle_key",
+                  "supported": "on",
+                  "set_value": "off"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "key_zoom_ultra_wide_angle",
+          "supported_values": "[false]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_master_video_size_key",
+          "supported_values": "[video_size_4kuhd]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "video_size_4kuhd",
+              "actions": [
+                {
+                  "target_key": "pref_should_check_open_none_sat_tele_angle",
+                  "supported": "false",
+                  "set_value": "true"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_master_video_fps_key",
+          "supported_values": "[120]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "120",
+              "actions": [
+                {
+                  "target_key": "pref_should_check_open_none_sat_tele_angle",
+                  "supported": "false",
+                  "set_value": "true"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "key_zoom_ultra_wide_angle",
+          "supported_values": "[false]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "pref_none_sat_ultra_wide_angle_key",
+          "supported_values": "[off]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        }
+      ],
+      "rear_tele": [
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_master_video_size_key",
+          "supported_values": "[video_size_720p,video_size_1080p]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "[video_size_720p,video_size_1080p]",
+              "actions": [
+                {
+                  "target_key": "pref_none_sat_tele_angle_key",
+                  "supported": "on",
+                  "set_value": "off"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_master_video_fps_key",
+          "supported_values": "[60]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "pref_none_sat_tele_angle_key",
+          "supported_values": "[on]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.video_size",
+          "key": "pref_master_video_size_key",
+          "supported_values": "[video_size_4kuhd]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
+        },
+        {
+          "feature_name": "com.oplus.configure.video.fps",
+          "key": "pref_master_video_fps_key",
+          "supported_values": "[30]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": "",
+          "dependency_rules": [
+            {
+              "trigger_condition": "30",
+              "actions": [
+                {
+                  "target_key": "pref_none_sat_tele_angle_key",
+                  "supported": "on",
+                  "set_value": "off"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "feature_name": "com.oplus.camera.feature.zoom",
+          "key": "pref_none_sat_tele_angle_key",
+          "supported_values": "[on]",
+          "default_value": "",
+          "scopes": "",
+          "value_type": ""
         }
       ]
     }

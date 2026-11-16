@@ -55,12 +55,12 @@
 
 {
   "Key": "REAR_LOWLIGHT_YUVHDR_ISO",
-  "Value": "1100"
+  "Value": "1600"
 },
 
 {
   "Key": "REAR_LOWLIGHT_MFNR_ISO",
-  "Value": "64000"
+  "Value": "6400"
 },
 
 {
@@ -81,6 +81,18 @@
 {
   "Key": "MOTION_CAPMODE_NIGHT_LUX_LIMIT",
   "Value": "460"
+},
+
+{
+  "Key": "NIGHT_SCENE_LUX_INDEX_INDOOR",
+  "Value": "355",
+  "Comment": "Indoor dim threshold"
+},
+
+{
+  "Key": "NIGHT_SCENE_LUX_INDEX_NIGHT_1S",
+  "Value": "450",
+  "Comment": "Lux ceiling where handheld exposure is capped at <= 1 second"
 },
 
 {
@@ -296,10 +308,34 @@
 },
 
 {
+  "Key": "MOTION_SCENE_NIGHT_DELAY_SWITCH_SPOTLIGHT",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "415, 430",
+  "Comment": "Stage / concert / spotlight scene night trigger"
+},
+
+{
+  "Key": "MOTION_SCENE_NIGHT_DELAY_SWITCH_SUNSET",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "415, 430",
+  "Comment": "Golden hour / sunset twilight night trigger"
+},
+
+{
+  "Key": "MOTION_SCENE_NIGHT_DELAY_SWITCH_FIREWORK",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "485, 500",
+  "Comment": "Fireworks night scene trigger"
+},
+
+{
   "Key": "NORMAL_SCENE_NIGHT_DELAY_SWITCH_LIVE",
   "Type": "Int32",
   "Count": "2",
-  "Value": "460, 480"
+  "Value": "485, 500"
 },
 
 {
@@ -343,14 +379,14 @@
   "Key": "HQRAW_ISO_DELAY_SWITCH",
   "Type": "Int32",
   "Count": "2",
-  "Value": "4950, 5050"
+  "Value": "1500, 1500"
 },
 
 {
   "Key": "HQRAW_LUX_DELAY_SWITCH",
   "Type": "Int32",
   "Count": "2",
-  "Value": "400, 420"
+  "Value": "395, 415"
 },
 
 {
@@ -413,8 +449,8 @@
   "Count": "4",
   "Value": "0       /* blurless+hdr support */,
             400     /* blurless+hdr iso trigger */,
-            6       /* hdr frame number */,
-            8       /* blurless+hdr frame number */",
+            4       /* hdr frame number */,
+            6       /* blurless+hdr frame number */",
   "Comment": "blurless+hdr support; blurless+hdr iso trigger; hdr frame number; blurless+hdr frame number"
 },
 
@@ -3030,9 +3066,9 @@
   "Type": "Int32",
   "Count": "56",
   "Value": "0/*SceneType face*/,
-    350, 20, 15/*1*/, 300, 50, 10/*2*/, 250, 80, 9/*3*/, 200, 120, 8/*4*/, 150, 160, 7/*5*/, 100, 200, 6/*6*/, 50, 300, 4/*7*/, 25, 400, 2/*8*/, 0, 500, 1/*9*/,
+    350, 20, 45/*1*/, 300, 50, 39/*2*/, 250, 80, 34/*3*/, 200, 120, 31/*4*/, 150, 160, 27/*5*/, 100, 200, 19/*6*/, 50, 300, 9/*7*/, 25, 400, 0/*8*/, 0, 500, 0/*9*/,
     1/*SceneType Noface*/,
-    350, 20, 15/*1*/, 300, 50, 10/*2*/, 250, 80, 9/*3*/, 200, 120, 8/*4*/, 150, 160, 7/*5*/, 100, 200, 6/*6*/, 50, 300, 4/*7*/, 25, 400, 2/*8*/, 0, 500, 1/*9*/
+    350, 20, 45/*1*/, 300, 50, 39/*2*/, 250, 80, 34/*3*/, 200, 120, 31/*4*/, 150, 160, 27/*5*/, 100, 200, 19/*6*/, 50, 300, 9/*7*/, 25, 400, 0/*8*/, 0, 500, 0/*9*
   ",
   "Comment": "
             SceneType,
@@ -3489,7 +3525,7 @@
   "Key": "ASD_HQ_MOTION_DETECT_ZOOM_RANGE",
   "Type": "Float",
   "Count": "2",
-  "Value": "0.999, 2.999"
+  "Value": "0.999, 1.999"
 },
 
 {
@@ -3539,6 +3575,25 @@
   "Type": "Float",
   "Count": "9",
   "Value": "0.952782662, 0.023608631, 0.023608631, 0.023608631, 0.952782662, 0.023608631, 0.023608631, 0.023608631, 0.952782662"
+},
+
+{
+  "Key": "SN_SHADING_TABLE_FIX_NUM_PARAM",
+  "Type": "Int32",
+  "Count": "3",
+  "Value": "1, 5, 5",
+  "Comment": "enable, ev0FixNum, evMinusFixNum"
+},
+
+{
+  "Key": "LONG_EXPOSURE_PURE_RAW",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "Key": "LONG_EXPOSURE_HDR_PLUS",
+  "Value": "4.0"
 }
 
 ]

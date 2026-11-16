@@ -816,7 +816,7 @@
   "VendorTag": "com.oplus.aps.turbohdr.thread.priority",
   "Type": "Int32",
   "Count": "1",
-  "Value": "-19",
+  "Value": "-20",
   "Comment": "turbohdr thread priority"
 },
 
@@ -824,7 +824,7 @@
   "VendorTag": "com.oplus.aps.turbohdr.init.thread.priority",
   "Type": "Int32",
   "Count": "1",
-  "Value": "-15",
+  "Value": "-20",
   "Comment": "turbohdr init thread priority"
 },
 
@@ -904,7 +904,7 @@
   "VendorTag": "com.oplus.aps.inner.turboraw.orms.params",
   "Type": "Int32",
   "Count": "2",
-  "Value": "1, 1000",
+  "Value": "1, 5000",
   "Comment": "turboraw orms params first params: 1. enable 0. unable  ,secondparams: rear timeout "
 },
 
@@ -912,7 +912,7 @@
   "VendorTag": "com.oplus.aps.front.inner.turboraw.orms.params",
   "Type": "Int32",
   "Count": "2",
-  "Value": "1, 700",
+  "Value": "1, 5000",
   "Comment": "turboraw orms params first params: 1. enable 0. unable  ,secondparams:orms front timeout "
 },
 
@@ -935,7 +935,7 @@
   "VendorTag": "com.oplus.aps.hybridraw.support.version",
   "Type": "Int32",
   "Count": "1",
-  "Value": "3",
+  "Value": "2",
   "Comment": "1:hr1.0 2:hr2.0 3:hr3.0"
 },
 
@@ -1561,10 +1561,11 @@
 },
 
 {
-  "VendorTag": "com.oplus.aps.rectify.process.on.output.buffer",
+  "VendorTag": "com.oplus.aps.turbohdr.process.canceltime",
   "Type": "Int32",
   "Count": "1",
-  "Value": "1"
+  "Value": "29000",
+  "Comment": "timeout threshold"
 },
 
 {
@@ -1687,6 +1688,13 @@
 },
 
 {
+  "VendorTag": "com.oplus.hdrtransform.capture.support.preinit",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
   "VendorTag": "com.oplus.exif.differentiate.lens.model",
   "Type": "Int32",
   "Count": "1",
@@ -1705,14 +1713,6 @@
   "Type": "Int32",
   "Count": "1",
   "Value": "1"
-},
-
-{
-  "VendorTag": "com.oplus.camera.feature.finalBitmap.support",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "0",
-  "Comment": "0: disable (default), 1: enable ! enable results in rendering glitches !"
 },
 
 {
@@ -1901,7 +1901,7 @@
   "VendorTag": "com.oplus.aps.support.raw10.featuretype",
   "Type": "Int32",
   "Count": "3",
-  "Value": "91, 94, 60"
+  "Value": "91, 94, 60, 77, 78, 61, 62, 63, 64, 72, 86"
 },
 
 {
@@ -1937,14 +1937,14 @@
   "VendorTag": "com.oplus.sat.hdr.zoom.ratio.range",
   "Type": "Float",
   "Count": "2",
-  "Value": "0.99,1.09"
+  "Value": "0.99,2.09"
 },
 
 {
   "VendorTag": "com.oplus.sat.normal.zoom.ratio.range",
   "Type": "Float",
   "Count": "4",
-  "Value": "1.1,1.4,1.9,1.9"
+  "Value": "2.09,2.09,2.09,2.09"
 },
 
 {
@@ -1978,11 +1978,171 @@
 },
 
 {
+  "VendorTag": "com.oplus.algo.raw.hdr.bits",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "12"
+},
+
+{
+  "VendorTag": "com.oplus.aps.deferjob.read.priority",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "-20",
+  "Comment": "defer job disk read thread pool priority (nice), 0: default, negative: higher priority e.g. -15"
+},
+
+{
+  "VendorTag": "com.oplus.aps.formatconverter.swraw10toraw16.thread.priority",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "-20"
+},
+
+{
+  "VendorTag": "com.oplus.aps.params.antibanding",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "5000000,7500000"
+},
+
+{
+  "VendorTag": "com.oplus.aps.use.physical.meta.for.capture",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
   "VendorTag": "com.oplus.aps.params.quickshot.threshold.rawmax",
   "Type": "Int32",
   "Count": "5",
   "Value": "  1,                2,                 3400,             4600,           4600",
   "Comment": "mainAlgoCntLimit, alterAlgoCntLimit, singleCapPeakMem, cameraMemLimit, cameraMemLimitLow"
+},
+
+{
+  "VendorTag": "com.oplus.aps.hmbird.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1",
+  "Comment": "0: disable aps hmbird config, 1: enable"
+},
+
+{
+    "VendorTag": "com.oplus.camera.hmbird.ultrahdrgainmap.critical.list",
+    "Type": "Int32",
+    "Count": "7",
+    "Value": "0, 0, 500, 0, 0, 2, 1",
+    "Comment": "0: disable, positive number: enable.
+                critical, preempt, uclamp, affinity, strict_affinity, scene, uclamp_effect"
+},
+
+{
+  "VendorTag": "com.oplus.camera.hmbird.capthread_.critical.list",
+  "Type": "Int32",
+  "Count": "7",
+  "Value": "1, 1, 700, 4, 1, 2, 0",
+  "Comment": "0: disable, positive number: enable.
+              critical, preempt, uclamp, affinity, strict_affinity, scene, uclamp_effect"
+},
+
+{
+  "VendorTag": "com.oplus.camera.hmbird.deferjobroutine.critical.list",
+  "Type": "Int32",
+  "Count": "7",
+  "Value": "1, 0, 600, 6, 0, 2, 0",
+  "Comment": "0: disable, positive number: enable.
+              critical, preempt, uclamp, affinity, strict_affinity, scene, uclamp_effect"
+},
+
+{
+  "VendorTag": "com.oplus.camera.hmbird.apsroutine.critical.list",
+  "Type": "Int32",
+  "Count": "7",
+  "Value": "1, 1, 0, 0, 0, 2, 0",
+  "Comment": "0: disable, positive number: enable.
+              critical, preempt, uclamp, affinity, strict_affinity, scene, uclamp_effect"
+},
+
+{
+  "VendorTag": "com.oplus.hmbird.hr.subref.select",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1",
+  "Comment": "hmbird set hr select thread"
+},
+
+{
+  "VendorTag": "com.oplus.camera.hmbird.c_n.critical.list",
+  "Type": "Int32",
+  "Count": "7",
+  "Value": "1, 1, 600, 0, 0, 2, 0",
+  "Comment": "0: disable, positive number: enable.
+              critical, preempt, uclamp, affinity, strict_affinity, scene, uclamp_effect"
+},
+
+{
+  "VendorTag": "com.oplus.camera.hmbird.g_n.critical.list",
+  "Type": "Int32",
+  "Count": "7",
+  "Value": "1, 1, 600, 6, 0, 2, 0",
+  "Comment": "0: disable, positive number: enable.
+              critical, preempt, uclamp, affinity, strict_affinity, scene, uclamp_effect"
+},
+
+{
+  "VendorTag": "com.oplus.camera.hmbird.d_n.critical.list",
+  "Type": "Int32",
+  "Count": "7",
+  "Value": "1, 1, 600, 4, 1, 2, 0",
+  "Comment": "0: disable, positive number: enable.
+              critical, preempt, uclamp, affinity, strict_affinity, scene, uclamp_effect"
+},
+
+{
+  "VendorTag": "com.oplus.camera.hmbird.d_n0.critical.list",
+  "Type": "Int32",
+  "Count": "7",
+  "Value": "1, 1, 700, 4, 1, 2, 0",
+  "Comment": "0: disable, positive number: enable.
+              critical, preempt, uclamp, affinity, strict_affinity, scene, uclamp_effect"
+},
+
+{
+  "VendorTag": "com.oplus.camera.hmbird.n_n.critical.list",
+  "Type": "Int32",
+  "Count": "7",
+  "Value": "1, 1, 800, 6, 0, 2, 0",
+  "Comment": "0: disable, positive number: enable.
+              critical, preempt, uclamp, affinity, strict_affinity, scene, uclamp_effect"
+},
+
+{
+  "VendorTag": "com.oplus.camera.hmbird.u_n.critical.list",
+  "Type": "Int32",
+  "Count": "7",
+  "Value": "1, 1, 600, 6, 0, 2, 0",
+  "Comment": "0: disable, positive number: enable.
+              critical, preempt, uclamp, affinity, strict_affinity, scene, uclamp_effect"
+},
+
+{
+  "VendorTag": "com.oplus.camera.hmbird.refframeproc.critical.list",
+  "Type": "Int32",
+  "Count": "7",
+  "Value": "1, 1, 800, 4, 1, 10, 0",
+  "Comment": "0: disable, positive number: enable.
+              critical, preempt, uclamp, affinity, strict_affinity, scene, uclamp_effect"
+},
+
+{
+  "VendorTag": "com.oplus.camera.hmbird.refhdrtransform.critical.list",
+  "Type": "Int32",
+  "Count": "7",
+  "Value": "1, 1, 800, 4, 1, 10, 0",
+  "Comment": "0: disable, positive number: enable.
+              critical, preempt, uclamp, affinity, strict_affinity, scene, uclamp_effect"
 },
 
 {

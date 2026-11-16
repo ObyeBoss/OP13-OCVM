@@ -2981,12 +2981,15 @@
                         "defaultResult": {
                             "isRemapped": 1,
                             "isShowHDRIcon": 1,
-                            "mfsrFrameCnt": 4,
-                            "multiFrameCnt": 4,
+                            "mfsrFrameCnt": 7,
+                            "multiFrameCnt": 7,
                             "turboRawCntCounterReset": 0,
                             "isNeedFlash": "FLASH_TYPE_DEFAULT",
                             "remapCause": "APS_SWITHC_CAUSE_THERMAL",
                             "captureEVList": [
+                                0,
+                                0,
+                                0,
                                 0,
                                 0,
                                 0,
@@ -3024,40 +3027,40 @@
                                 2500,
                                 6400,
                                 80,
-                                5,
-                                5,
+                                6,
                                 6,
                                 7,
                                 8,
-                                8,
+                                9,
+                                9,
                                 120,
-                                6,
-                                6,
-                                6,
+                                7,
+                                7,
                                 7,
                                 8,
-                                8,
+                                9,
+                                9,
                                 300,
-                                6,
-                                6,
                                 7,
                                 7,
                                 8,
                                 8,
+                                9,
+                                9,
                                 500,
-                                6,
-                                7,
                                 7,
                                 8,
                                 8,
-                                8,
+                                9,
+                                9,
+                                9,
                                 700,
-                                7,
-                                7,
                                 8,
                                 8,
-                                8,
-                                8
+                                9,
+                                9,
+                                9,
+                                9
                             ]
                         },
                         "plan": [
@@ -3590,15 +3593,17 @@
                             "isHdrFusion": 0,
                             "isShowHDRIcon": 0,
                             "metaIndex": 1,
-                            "multiFrameCnt": 4,
-                            "preCollectFrameCnt": 4,
+                            "multiFrameCnt": 6,
+                            "preCollectFrameCnt": 6,
                             "supportQuickJpeg": 1,
                             "thumbnailIndex": 1,
-                            "zslFrameCnt": 4,
+                            "zslFrameCnt": 6,
                             "aisState": "AIS_STATE_2DOL_STATIC_HDR_NOT_DETECTED",
                             "isNeedFlash": "FLASH_TYPE_DEFAULT",
                             "supportCaptureZoomFeature": "APS_SUPPORT_ZOOM_FEATURE_NONE",
                             "captureEVList": [
+                                0,
+                                0,
                                 0,
                                 0,
                                 0,
@@ -3618,11 +3623,12 @@
                                         0,
                                         0,
                                         0,
+                                        0,
                                         0
                                     ],
-                                    "multiFrameCnt": 4,
-                                    "zslFrameCnt": 4,
-                                    "preCollectFrameCnt": 4
+                                    "multiFrameCnt": 5,
+                                    "zslFrameCnt": 5,
+                                    "preCollectFrameCnt": 5
                                 }
                             },
                             {
@@ -3660,10 +3666,12 @@
                                         0,
                                         0,
                                         0,
+                                        0,
                                         "{oplusMeta->com.qti.stats_control.hdr_EV_Minus:[-100, 100]}",
                                         0
                                     ],
                                     "requestSensorModeList": [
+                                        3,
                                         3,
                                         3,
                                         3,
@@ -3674,9 +3682,9 @@
                                     "aisState": "AIS_STATE_2DOL_STATIC_HDR_DETECTED",
                                     "isHdrFusion": 1,
                                     "isShowHDRIcon": 1,
-                                    "multiFrameCnt": 6,
-                                    "preCollectFrameCnt": 4,
-                                    "zslFrameCnt": 4
+                                    "multiFrameCnt": 7,
+                                    "preCollectFrameCnt": 5,
+                                    "zslFrameCnt": 5
                                 }
                             },
                             {
@@ -3719,9 +3727,11 @@
                                         0,
                                         0,
                                         0,
+                                        0,
                                         "{oplusMeta->com.qti.stats_control.hdr_EV_Minus:[-100, 100]}"
                                     ],
                                     "requestSensorModeList": [
+                                        3,
                                         3,
                                         3,
                                         3,
@@ -3732,9 +3742,9 @@
                                     "aisState": "AIS_STATE_2DOL_STATIC_HDR_DETECTED",
                                     "isHdrFusion": 1,
                                     "isShowHDRIcon": 1,
-                                    "multiFrameCnt": 6,
-                                    "preCollectFrameCnt": 4,
-                                    "zslFrameCnt": 4
+                                    "multiFrameCnt": 7,
+                                    "preCollectFrameCnt": 5,
+                                    "zslFrameCnt": 5
                                 }
                             },
                             {
@@ -3791,8 +3801,8 @@
                                     "isHdrFusion": 1,
                                     "isShowHDRIcon": 1,
                                     "multiFrameCnt": 6,
-                                    "preCollectFrameCnt": 4,
-                                    "zslFrameCnt": 4
+                                    "preCollectFrameCnt": 5,
+                                    "zslFrameCnt": 5
                                 }
                             },
                             {
@@ -3808,6 +3818,7 @@
                                         0,
                                         0,
                                         0,
+                                        0,
                                         0
                                     ],
                                     "requestSensorModeList": [
@@ -3815,11 +3826,12 @@
                                         3,
                                         3,
                                         3,
+                                        3,
                                         6
                                     ],
-                                    "multiFrameCnt": 5,
-                                    "preCollectFrameCnt": 4,
-                                    "zslFrameCnt": 4
+                                    "multiFrameCnt": 6,
+                                    "preCollectFrameCnt": 5,
+                                    "zslFrameCnt": 5
                                 }
                             },
                             {
@@ -3865,12 +3877,13 @@
                                         0,
                                         0,
                                         0,
+                                        0,
                                         "{oplusMeta->com.qti.stats_control.hdr_EV_Minus:[-100, 100]}"
                                     ],
                                     "metaIndex": 1,
-                                    "multiFrameCnt": 5,
-                                    "preCollectFrameCnt": 4,
-                                    "zslFrameCnt": 4,
+                                    "multiFrameCnt": 6,
+                                    "preCollectFrameCnt": 5,
+                                    "zslFrameCnt": 5,
                                     "aisState": "AIS_STATE_2DOL_STATIC_HDR_DETECTED",
                                     "isHdrFusion": 1,
                                     "isShowHDRIcon": 1
@@ -3965,13 +3978,15 @@
                     },
                     {
                         "defaultResult": {
-                            "multiFrameCnt": 8,
+                            "multiFrameCnt": 10,
                             "captureEVList": [
                                 0,
+                                -42,
+                                -16,
                                 0,
                                 0,
-                                -38,
-                                -19,
+                                0,
+                                0,
                                 0,
                                 0,
                                 0
@@ -3990,11 +4005,12 @@
                                         0,
                                         0,
                                         0,
+                                        0,
                                         0
                                     ],
-                                    "multiFrameCnt": 4,
-                                    "preCollectFrameCnt": 4,
-                                    "zslFrameCnt": 4
+                                    "multiFrameCnt": 5,
+                                    "preCollectFrameCnt": 5,
+                                    "zslFrameCnt": 5
                                 }
                             },
                             {
@@ -4021,8 +4037,10 @@
                                 "planResult": {
                                     "captureEVList": [
                                         0,
+                                        -42,
                                         -19,
-                                        -38,
+                                        0,
+                                        0,
                                         0,
                                         0,
                                         0,
@@ -4070,9 +4088,10 @@
                                         0,
                                         0,
                                         0,
+                                        0,
                                         0
                                     ],
-                                    "multiFrameCnt": 7,
+                                    "multiFrameCnt": 8,
                                     "preCollectFrameCnt": 6,
                                     "zslFrameCnt": 6,
                                     "thumbnailIndex": 1,
@@ -4095,14 +4114,16 @@
                                 "planResult": {
                                     "captureEVList": [
                                         0,
+                                        -42,
+                                        -19,
                                         0,
                                         0,
-                                        -32,
-                                        -16,
+                                        0,
                                         0,
                                         0,
                                         0
-                                    ]
+                                    ],
+                                    "multiFrameCnt": 9
                                 }
                             }
                         ]
@@ -4120,12 +4141,13 @@
                             "isHdrFusion": 0,
                             "isShowHDRIcon": 0,
                             "metaIndex": 1,
-                            "multiFrameCnt": 4,
-                            "preCollectFrameCnt": 4,
+                            "multiFrameCnt": 5,
+                            "preCollectFrameCnt": 5,
                             "thumbnailIndex": 1,
                             "aisState": "AIS_STATE_2DOL_STATIC_HDR_NOT_DETECTED",
                             "isNeedFlash": "FLASH_TYPE_DEFAULT",
                             "captureEVList": [
+                                0,
                                 0,
                                 0,
                                 0,
@@ -4156,12 +4178,13 @@
                                         0,
                                         0,
                                         0,
+                                        0,
                                         "{oplusMeta->com.qti.stats_control.hdr_EV_Minus:[-100, 100]}"
                                     ],
-                                    "multiFrameCnt": 5,
-                                    "preCollectFrameCnt": 4,
+                                    "multiFrameCnt": 6,
+                                    "preCollectFrameCnt": 5,
                                     "isShowHDRIcon": 1,
-                                    "zslFrameCnt": 4,
+                                    "zslFrameCnt": 5,
                                     "aisState": "AIS_STATE_2DOL_STATIC_HDR_DETECTED"
                                 }
                             }
@@ -4805,8 +4828,8 @@
                                     }
                                 },
                                 "planResult": {
-                                    "mfsrFrameCnt": 3,
-                                    "multiFrameCnt": 3
+                                    "mfsrFrameCnt": 5,
+                                    "multiFrameCnt": 5
                                 }
                             }
                         ]
@@ -4825,11 +4848,11 @@
                             "isNeedFlash": "FLASH_TYPE_DEFAULT",
                             "captureEVList": [
                                 6,
-                                6,
+                                4,
                                 0,
                                 0,
                                 -6,
-                                -6
+                                -4
                             ]
                         },
                         "plan": null
@@ -4854,40 +4877,40 @@
                                 2500,
                                 6400,
                                 80,
-                                5,
-                                5,
+                                6,
                                 6,
                                 7,
                                 8,
-                                8,
+                                9,
+                                9,
                                 120,
-                                6,
-                                6,
-                                6,
+                                7,
+                                7,
                                 7,
                                 8,
-                                8,
+                                9,
+                                9,
                                 300,
-                                6,
-                                6,
                                 7,
                                 7,
                                 8,
                                 8,
+                                9,
+                                9,
                                 500,
-                                6,
-                                7,
                                 7,
                                 8,
                                 8,
-                                8,
+                                9,
+                                9,
+                                9,
                                 700,
-                                7,
-                                7,
                                 8,
                                 8,
-                                8,
-                                8
+                                9,
+                                9,
+                                9,
+                                9
                             ]
                         },
                         "plan": [
@@ -4987,7 +5010,7 @@
                         "defaultResult": {
                             "isPortraitFallback": 0,
                             "isRemapped": 1,
-                            "mfsrFrameCnt": 4,
+                            "mfsrFrameCnt": 6,
                             "multiFrameCnt": 4,
                             "turboRawCntCounterReset": 0,
                             "remapCause": "APS_SWITCH_CAUSE_MEMORY"
@@ -5148,7 +5171,7 @@
                     {
                         "defaultResult": {
                             "isRemapped": 1,
-                            "mfsrFrameCnt": 4,
+                            "mfsrFrameCnt": 6,
                             "multiFrameCnt": 4,
                             "turboRawCntCounterReset": 0,
                             "remapCause": "APS_SWITCH_CAUSE_MEMORY"
@@ -5287,13 +5310,14 @@
                     {
                         "defaultResult": {
                             "metaIndex": 7,
-                            "multiFrameCnt": 8,
+                            "multiFrameCnt": 9,
                             "captureEVList": [
                                 0,
-                                0,
-                                0,
-                                -38,
+                                -42,
                                 -19,
+                                0,
+                                0,
+                                0,
                                 0,
                                 0,
                                 0
@@ -5320,8 +5344,9 @@
                                 "planResult": {
                                     "captureEVList": [
                                         0,
+                                        -42,
                                         -19,
-                                        -38,
+                                        0,
                                         0,
                                         0,
                                         0,
@@ -5340,10 +5365,11 @@
                                 "planResult": {
                                     "captureEVList": [
                                         0,
+                                        -42,
+                                        -19,
                                         0,
                                         0,
-                                        -32,
-                                        -16,
+                                        0,
                                         0,
                                         0,
                                         0
@@ -5389,8 +5415,8 @@
                     {
                         "defaultResult": {
                             "isRemapped": 1,
-                            "mfsrFrameCnt": 6,
-                            "multiFrameCnt": 6,
+                            "mfsrFrameCnt": 7,
+                            "multiFrameCnt": 7,
                             "supportQuickJpeg": 1,
                             "turboRawCntCounterReset": 0,
                             "remapCause": "APS_SWITHC_CAUSE_THERMAL",
@@ -5591,12 +5617,14 @@
                                 "planResult": {
                                     "captureEVList": [
                                         0,
+                                        "{oplusMeta->com.qti.stats_control.hdr_EV_Minus:[-24, 24]} ",
                                         0,
                                         0,
-                                        "{oplusMeta->com.qti.stats_control.hdr_EV_Minus:[-24, 24]} "
+                                        0,
+                                        0
                                     ],
                                     "isHdrFusion": 1,
-                                    "multiFrameCnt": 4,
+                                    "multiFrameCnt": 6,
                                     "preCollectFrameCnt": 0,
                                     "supportCaptureZoomFeature": "APS_SUPPORT_ZOOM_FEATURE_NONE",
                                     "zslFrameCnt": 0
@@ -5618,16 +5646,18 @@
                                 "planResult": {
                                     "captureEVList": [
                                         0,
-                                        0,
-                                        0,
-                                        -38,
+                                        -42,
                                         -19,
+                                        0,
+                                        0,
+                                        0,
+                                        0,
                                         0,
                                         0,
                                         0
                                     ],
                                     "turboFusionNightTotalExpTime": "nightTripodModeTotalExpTime",
-                                    "multiFrameCnt": 8,
+                                    "multiFrameCnt": 10,
                                     "isHdrFusion": 1,
                                     "nightSeTrigger": 1,
                                     "preCollectFrameCnt": 0,
@@ -5663,15 +5693,17 @@
                                 "planResult": {
                                     "captureEVList": [
                                         0,
-                                        0,
-                                        0,
-                                        -38,
+                                        -42,
                                         -19,
+                                        0,
+                                        0,
+                                        0,
+                                        0,
                                         0,
                                         0,
                                         0
                                     ],
-                                    "multiFrameCnt": 8,
+                                    "multiFrameCnt": 10,
                                     "preCollectFrameCnt": 0,
                                     "zslFrameCnt": 0,
                                     "supportCaptureZoomFeature": "APS_SUPPORT_ZOOM_FEATURE_NONE",
@@ -5759,11 +5791,11 @@
                                 "planResult": {
                                     "captureEVList": [
                                         0,
-                                        0,
-                                        0,
-                                        0,
                                         "{oplusMeta->com.qti.stats_control.hdr_EV_Minus:[-36, 36]} / 2",
-                                        "{oplusMeta->com.qti.stats_control.hdr_EV_Minus:[-36, 36]} "
+                                        "{oplusMeta->com.qti.stats_control.hdr_EV_Minus:[-36, 36]} ",
+                                        0,
+                                        0,
+                                        0
                                     ],
                                     "multiFrameCnt": 6,
                                     "preCollectFrameCnt": 4,
@@ -5800,10 +5832,10 @@
                                 "planResult": {
                                     "captureEVList": [
                                         0,
+                                        "{oplusMeta->com.qti.stats_control.hdr_EV_Minus:[-36, 36]} / 2",
+                                        "{oplusMeta->com.qti.stats_control.hdr_EV_Minus:[-36, 36]} ",
                                         0,
                                         0,
-                                        0,
-                                        "{oplusMeta->com.qti.stats_control.hdr_EV_Minus:[-36, 36]} / 2 ",
                                         0
                                     ],
                                     "multiFrameCnt": 6,
@@ -6003,40 +6035,40 @@
                                 2500,
                                 6400,
                                 80,
-                                5,
-                                5,
+                                6,
                                 6,
                                 7,
                                 8,
-                                8,
+                                9,
+                                9,
                                 120,
-                                6,
-                                6,
-                                6,
+                                7,
+                                7,
                                 7,
                                 8,
-                                8,
+                                9,
+                                9,
                                 300,
-                                6,
-                                6,
                                 7,
                                 7,
                                 8,
                                 8,
+                                9,
+                                9,
                                 500,
-                                6,
-                                7,
                                 7,
                                 8,
                                 8,
-                                8,
+                                9,
+                                9,
+                                9,
                                 700,
-                                7,
-                                7,
                                 8,
                                 8,
-                                8,
-                                8
+                                9,
+                                9,
+                                9,
+                                9
                             ]
                         },
                         "plan": [
@@ -6106,15 +6138,16 @@
                         "defaultResult": {
                             "isHdrFusion": 1,
                             "metaIndex": 7,
-                            "multiFrameCnt": 8,
+                            "multiFrameCnt": 9,
                             "isNeedFlash": "FLASH_TYPE_NO_NEED_FLASH",
                             "turboFusionNightTotalExpTime": "nightModeTotalExpTime",
                             "captureEVList": [
                                 0,
+                                -42,
+                                -19,
                                 0,
                                 0,
-                                -32,
-                                -16,
+                                0,
                                 0,
                                 0,
                                 0
@@ -6143,9 +6176,10 @@
                                         0,
                                         0,
                                         0,
+                                        0,
                                         0
                                     ],
-                                    "multiFrameCnt": 8
+                                    "multiFrameCnt": 9
                                 }
                             }
                         ]
@@ -6176,7 +6210,7 @@
                             "isHdrFusion": 1,
                             "isShowHDRIcon": 0,
                             "metaIndex": 7,
-                            "multiFrameCnt": 8,
+                            "multiFrameCnt": 10,
                             "nightSeTrigger": 1,
                             "supportQuickJpeg": 1,
                             "thumbnailIndex": 1,
@@ -6207,10 +6241,12 @@
                         "defaultResult": {
                             "captureEVList": [
                                 0,
-                                0,
-                                0,
-                                -38,
+                                -42,
                                 -19,
+                                0,
+                                0,
+                                0,
+                                0,
                                 0,
                                 0,
                                 0
@@ -6227,14 +6263,16 @@
                                 "planResult": {
                                     "captureEVList": [
                                         0,
+                                        -42,
+                                        -19,
                                         0,
                                         0,
-                                        -32,
-                                        -16,
+                                        0,
                                         0,
                                         0,
                                         0
-                                    ]
+                                    ],
+                                    "multiFrameCnt": 9
                                 }
                             }
                         ]
@@ -6248,10 +6286,11 @@
                     {
                         "defaultResult": {
                             "metaIndex": 1,
-                            "mfsrFrameCnt": 4,
-                            "multiFrameCnt": 5,
+                            "mfsrFrameCnt": 5,
+                            "multiFrameCnt": 6,
                             "turboShutterWaitTime": 1000,
                             "captureEVList": [
+                                0,
                                 0,
                                 0,
                                 0,
@@ -6328,8 +6367,8 @@
                 "algoParamsResult": [
                     {
                         "defaultResult": {
-                            "mfsrFrameCnt": 3,
-                            "multiFrameCnt": 3
+                            "mfsrFrameCnt": 6,
+                            "multiFrameCnt": 6
                         },
                         "plan": null
                     }
@@ -6342,9 +6381,12 @@
                     {
                         "defaultResult": {
                             "metaIndex": 1,
-                            "mfsrFrameCnt": 4,
-                            "multiFrameCnt": 4,
+                            "mfsrFrameCnt": 7,
+                            "multiFrameCnt": 7,
                             "captureEVList": [
+                                0,
+                                0,
+                                0,
                                 0,
                                 0,
                                 0,
@@ -6362,12 +6404,13 @@
                     {
                         "defaultResult": {
                             "isECEnable": 0,
-                            "multiFrameCnt": 6,
+                            "multiFrameCnt": 7,
                             "nightSeTrigger": 1,
                             "preCollectFrameCnt": 0,
                             "zslFrameCnt": 0,
                             "turboFusionNightTotalExpTime": "nightModeTotalExpTime",
                             "captureEVList": [
+                                0,
                                 0,
                                 0,
                                 0,
@@ -7198,7 +7241,109 @@
                         "plan": null
                     }
                 ],
-                "nextMode": "SINGLE_ALGO_WATERMARK"
+                "nextMode": "SINGLE_ALGO_HDR_TRANSFROM"
+            },
+            {
+                "mode": "SINGLE_ALGO_HDR_TRANSFROM",
+                "condition": {
+                    "and": {
+                        "or": {
+                            "eq": [
+                                "captureMode",
+                                "APS_CAPMODE_XPAN"
+                            ],
+                            "eq1": [
+                                "captureMode",
+                                "APS_CAPMODE_XPAN_PARALLEL"
+                            ],
+                            "and4": {
+                                "eq": [
+                                    "captureMode",
+                                    "APS_CAPMODE_AI_HIGH_PIXEL"
+                                ],
+                                "eq1": [
+                                    "paramsHolder->ultra_hdr_enable",
+                                    true
+                                ]
+                            },
+                            "and3": {
+                                "not_eq": [
+                                    "recordingCapture",
+                                    0
+                                ],
+                                "eq": [
+                                    "paramsHolder->ultra_hdr_enable",
+                                    true
+                                ]
+                            },
+                            "and2": {
+                                "or": {
+                                    "eq": [
+                                        "captureMode",
+                                        "APS_CAPMODE_REAR_NORMAL"
+                                    ],
+                                    "eq1": [
+                                        "captureMode",
+                                        "APS_CAPMODE_REAR_BOKEH"
+                                    ],
+                                    "eq2": [
+                                        "captureMode",
+                                        "APS_CAPMODE_FRONT_BOKEH"
+                                    ],
+                                    "eq3": [
+                                        "captureMode",
+                                        "APS_CAPMODE_FRONT_NORMAL"
+                                    ],
+                                    "eq4": [
+                                        "captureMode",
+                                        "APS_CAPMODE_FRONT_NIGHT"
+                                    ],
+                                    "eq5": [
+                                        "captureMode",
+                                        "APS_CAPMODE_REAR_NIGHT"
+                                    ]
+                                },
+                                "eq": [
+                                    "paramsHolder->ultra_hdr_enable",
+                                    true
+                                ]
+                            },
+                            "eq4": [
+                                "captureMode",
+                                "APS_CAPMODE_SUPER_TEXT"
+                            ],
+                            "and": {
+                                "eq": [
+                                    "captureMode",
+                                    "APS_CAPMODE_VIDEO"
+                                ],
+                                "eq1": [
+                                    "paramsHolder->dolby_enable",
+                                    true
+                                ],
+                                "eq2": [
+                                    "paramsHolder->ultra_hdr_enable",
+                                    true
+                                ]
+                            }
+                        },
+                        "not_eq": [
+                            "sceneMode",
+                            "APS_SCENE_TURBO_MOON"
+                        ]
+                    }
+                },
+                "singleAlgoResult": [
+                    {
+                        "defaultResult": {
+                            "algoList": [
+                                "APS_ALGO_HDR_TRANSFORM"
+                            ]
+                        },
+                        "plan": null
+                    }
+                ],
+                "nextMode": "SINGLE_ALGO_DOCUMENT_RECTIFY"
             },
             {
                 "mode": "SINGLE_ALGO_WATERMARK",
@@ -7217,8 +7362,7 @@
                         },
                         "plan": null
                     }
-                ],
-                "nextMode": "SINGLE_ALGO_DOCUMENT_RECTIFY"
+                ]
             },
             {
                 "mode": "SINGLE_ALGO_FACERESTOREV2",
@@ -7365,7 +7509,8 @@
                         },
                         "plan": null
                     }
-                ]
+                ],
+                "nextMode": "SINGLE_ALGO_WATERMARK"
             }
         ]
     }
